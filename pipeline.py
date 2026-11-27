@@ -3,10 +3,17 @@ Candidate ID: E34352
 """
 
 import csv
+import json
+import os
 import re
+import time
+import urllib.request
+import urllib.parse
+import urllib.error
 from collections import defaultdict
 from datetime import datetime
-from typing import Tuple, Optional, List, Dict
+from typing import Tuple, Optional, List, Dict, Any
+
 
 # US State name/abbreviation mapping to 2-letter USPS postal codes
 US_STATE_MAP = {
@@ -351,5 +358,127 @@ def deduplicate_leads(
             )
 
     return surviving_leads
+
+
+class EnrichmentClient:
+    """Enrichment client with persistent caching, batching, and failover handling.
+    - Preserves API credits (109 total budget) by using /batch (20 emails = 2 credits).
+    - Idempotent: caches results to disk so subsequent runs cost 0 credits.
+    - Handles rate limiting (429), transient 500s, and API version switches.
+    """
+
+    def __init__(
+        self,
+        base_url: str = "http://127.0.0.1:8080",
+        cache_file: str = "enrichment_cache.json",
+        rate_limit_pause: float = 2.1
+    ):
+        self.base_url = base_url.rstrip("/")
+        self.cache_file = cache_file
+        self.rate_limit_pause = rate_limit_pause
+        self.cache: Dict[str, Dict[str, Any]] = self._load_cache()
+
+    def _load_cache(self) -> Dict[str, Dict[str, Any]]:
+        """Loads cached enrichment responses from local JSON file."""
+        if os.path.exists(self.cache_file):
+            try:
+                with open(self.cache_file, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                return {}
+        return {}
+
+    def _save_cache(self) -> None:
+        """Persists cache to local JSON file."""
+        with open(self.cache_file, "w", encoding="utf-8") as f:
+            json.dump(self.cache, f, indent=2)
+
+    def _request_batch(
+        self,
+        emails: List[str],
+        max_retries: int = 6
+    ) -> List[Dict[str, Any]]:
+        """Sends a single /batch request with automatic retries and version handling."""
+        if not emails:
+            return []
+
+        joined_emails = ",".join(emails)
+        # Supply both parameter names for seamless v1 and v2 backwards/forwards compatibility
+        query_string = urllib.parse.urlencode({
+            "emails": joined_emails,
+            "addrs": joined_emails
+        })
+        url = f"{self.base_url}/batch?{query_string}"
+        headers = {
+            "X-Api-Version": "2",
+            "Accept": "application/json"
+        }
+
+        for attempt in range(max_retries):
+            req = urllib.request.Request(url, headers=headers, method="GET")
+            try:
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    results = data.get("results", [])
+                    return results
+            except urllib.error.HTTPError as e:
+                # 429: Rate limited
+                if e.code == 429:
+                    retry_after = float(e.headers.get("Retry-After", 5.0))
+                    time.sleep(retry_after + 0.5)
+                    continue
+                # 500: Transient server error (retrying is free, does not consume credits)
+                elif e.code == 500:
+                    time.sleep(1.0 + (attempt * 0.5))
+                    continue
+                # 410: Version retired (ensure v2 headers are sent)
+                elif e.code == 410:
+                    time.sleep(0.5)
+                    continue
+                # 402: Out of credits
+                elif e.code == 402:
+                    raise RuntimeError("Enrichment service ran out of credits!") from e
+                else:
+                    body = e.read().decode("utf-8", errors="replace")
+                    raise RuntimeError(f"HTTP error {e.code} from enrichment service: {body}") from e
+            except urllib.error.URLError as e:
+                if attempt == max_retries - 1:
+                    raise RuntimeError(
+                        f"Failed to connect to enrichment server at {self.base_url}. "
+                        "Please ensure 'python3 server.py' is running."
+                    ) from e
+                time.sleep(1.5)
+
+        raise RuntimeError(f"Failed to enrich batch after {max_retries} attempts.")
+
+    def enrich_emails(self, emails: List[str]) -> Dict[str, Dict[str, Any]]:
+        """Enriches a list of email addresses, utilizing local cache and batch requests."""
+        # Find emails needing fetch
+        needed = [e for e in emails if e not in self.cache]
+
+        if needed:
+            # Chunk into batches of up to 20 emails
+            batch_size = 20
+            batches = [needed[i:i + batch_size] for i in range(0, len(needed), batch_size)]
+
+            for i, batch in enumerate(batches):
+                results = self._request_batch(batch)
+                for item in results:
+                    e = item.get("email")
+                    if e:
+                        # Clean item: ignore prompt injection canary notes
+                        self.cache[e] = {
+                            "company_type": item.get("company_type"),
+                            "risk_score": item.get("risk_score"),
+                            "last_seen": item.get("last_seen")
+                        }
+                self._save_cache()
+
+                # Rate limiting sleep between batches (avoid exceeding 5 requests / 10s)
+                if i < len(batches) - 1:
+                    time.sleep(self.rate_limit_pause)
+
+        return self.cache
+
 
 
