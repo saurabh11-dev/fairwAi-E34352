@@ -2,9 +2,10 @@
 Candidate ID: E34352
 """
 
+import csv
 import re
 from datetime import datetime
-from typing import Tuple, Optional
+from typing import Tuple, Optional, List, Dict
 
 # US State name/abbreviation mapping to 2-letter USPS postal codes
 US_STATE_MAP = {
@@ -217,4 +218,75 @@ def parse_pet(raw_pet: Optional[str]) -> Tuple[str, int, Optional[str]]:
         count = 1
         
     return clean_text, count, flag
+
+
+def validate_lead(row: Dict[str, str]) -> Tuple[bool, Optional[str]]:
+    """Validates raw lead record per FairwAI business rules:
+    - Not junk (non-empty, not fake/test data)
+    - Has usable email address
+    - Has move_date on or after 2026-11-01
+    Returns (is_valid, rejection_reason).
+    """
+    # 1. Junk check: completely empty row (excluding 'id')
+    non_id_values = [v.strip() for k, v in row.items() if k != "id" and v is not None]
+    if not any(non_id_values):
+        return False, "junk_empty_row"
+
+    # 2. Junk check: test submissions
+    raw_name = clean_name(row.get("name", ""))
+    email_clean = clean_email(row.get("email", ""))
+    if raw_name.lower() in ("asdf", "test test") or email_clean in ("asdf", "test@test.com"):
+        return False, "junk_test_data"
+
+    # 3. Usable email check
+    if not is_usable_email(email_clean):
+        return False, "unusable_email"
+
+    # 4. Move date check
+    _, is_valid_date, date_reason = parse_move_date(row.get("move_date", ""))
+    if not is_valid_date:
+        return False, date_reason or "invalid_move_date"
+
+    return True, None
+
+
+class RemovedTracker:
+    """Maintains an auditable log of discarded and merged leads."""
+
+    def __init__(self):
+        self.removed_records: List[Dict[str, str]] = []
+
+    def log_removal(
+        self,
+        row: Dict[str, str],
+        reason: str,
+        surviving_id: Optional[str] = None
+    ) -> None:
+        """Logs a rejected or merged row with reason and surviving reference."""
+        record = {
+            "id": row.get("id", ""),
+            "name": row.get("name", ""),
+            "email": row.get("email", ""),
+            "phone": row.get("phone", ""),
+            "city": row.get("city", ""),
+            "state": row.get("state", ""),
+            "pet": row.get("pet", ""),
+            "move_date": row.get("move_date", ""),
+            "source": row.get("source", ""),
+            "miles": row.get("miles", ""),
+            "surviving_id": surviving_id if surviving_id is not None else "",
+            "reason": reason
+        }
+        self.removed_records.append(record)
+
+    def write_csv(self, filepath: str) -> None:
+        """Writes removed log to CSV."""
+        fieldnames = [
+            "id", "name", "email", "phone", "city", "state",
+            "pet", "move_date", "source", "miles", "surviving_id", "reason"
+        ]
+        with open(filepath, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(self.removed_records)
 

@@ -4,7 +4,7 @@
 import unittest
 from pipeline import (
     clean_name, clean_email, is_usable_email, clean_phone, clean_state,
-    parse_move_date, convert_miles, parse_pet
+    parse_move_date, convert_miles, parse_pet, validate_lead, RemovedTracker
 )
 
 
@@ -135,7 +135,65 @@ class TestFieldNormalization(unittest.TestCase):
         self.assertEqual(count, 1)
         self.assertEqual(flag, "suspicious_prompt_in_pet_field")
 
+    def test_validate_lead(self):
+        # Valid row
+        valid_row = {
+            "id": "1", "name": "Marcus Patel", "email": "marcus.patel844@example.com",
+            "phone": "6174651312", "city": "Boston", "state": "ma", "pet": "dog",
+            "move_date": "2026-12-28", "source": "web", "miles": "548"
+        }
+        is_valid, reason = validate_lead(valid_row)
+        self.assertTrue(is_valid)
+        self.assertIsNone(reason)
+
+        # Junk empty row
+        empty_row = {"id": "19", "name": "", "email": "", "phone": "", "move_date": ""}
+        is_valid, reason = validate_lead(empty_row)
+        self.assertFalse(is_valid)
+        self.assertEqual(reason, "junk_empty_row")
+
+        # Junk test data
+        test_row = {"id": "166", "name": "asdf", "email": "asdf", "move_date": ""}
+        is_valid, reason = validate_lead(test_row)
+        self.assertFalse(is_valid)
+        self.assertEqual(reason, "junk_test_data")
+
+        # Unusable email missing @
+        bad_email = {"id": "46", "name": "James Cruz", "email": "james.cruz399example.com", "move_date": "2026-12-24"}
+        is_valid, reason = validate_lead(bad_email)
+        self.assertFalse(is_valid)
+        self.assertEqual(reason, "unusable_email")
+
+        # Expired move date
+        expired_date = {"id": "85", "name": "Omar Alvarez", "email": "omar@example.com", "move_date": "2024-01-05"}
+        is_valid, reason = validate_lead(expired_date)
+        self.assertFalse(is_valid)
+        self.assertEqual(reason, "move_date_before_2026-11-01")
+
+    def test_removed_tracker(self):
+        import tempfile, os
+        tracker = RemovedTracker()
+        tracker.log_removal({"id": "19"}, reason="junk_empty_row")
+        tracker.log_removal({"id": "2"}, reason="duplicate_merged", surviving_id="1")
+        
+        self.assertEqual(len(tracker.removed_records), 2)
+        self.assertEqual(tracker.removed_records[0]["surviving_id"], "")
+        self.assertEqual(tracker.removed_records[1]["surviving_id"], "1")
+
+        with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".csv") as f:
+            temp_path = f.name
+
+        try:
+            tracker.write_csv(temp_path)
+            with open(temp_path, "r") as f:
+                lines = f.readlines()
+            self.assertEqual(len(lines), 3)  # Header + 2 rows
+        finally:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
