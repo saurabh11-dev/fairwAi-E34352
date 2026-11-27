@@ -4,7 +4,8 @@
 import unittest
 from pipeline import (
     clean_name, clean_email, is_usable_email, clean_phone, clean_state,
-    parse_move_date, convert_miles, parse_pet, validate_lead, RemovedTracker
+    parse_move_date, convert_miles, parse_pet, validate_lead, RemovedTracker,
+    canonical_email, deduplicate_leads
 )
 
 
@@ -192,8 +193,40 @@ class TestFieldNormalization(unittest.TestCase):
             if os.path.exists(temp_path):
                 os.remove(temp_path)
 
+    def test_canonical_email(self):
+        self.assertEqual(canonical_email("marcus.shah783+b@example.com"), "marcus.shah783@example.com")
+        self.assertEqual(canonical_email("DEV.WONG357+B@EXAMPLE.COM"), "dev.wong357@example.com")
+        self.assertEqual(canonical_email("plain@example.com"), "plain@example.com")
+
+    def test_deduplicate_leads(self):
+        tracker = RemovedTracker()
+        # Pair 1: regular duplicate pair
+        lead1 = {"id": "4", "email": "carlos.patel422@example.com", "phone": "+1 3127911453"}
+        lead2 = {"id": "180", "email": "CARLOS.PATEL422@EXAMPLE.COM", "phone": "312.791.1453"}
+
+        # Pair 2: base email with real phone vs +b alias with fake 999 phone
+        lead3 = {"id": "5", "email": "marcus.shah783+b@example.com", "phone": "9990007010"}
+        lead4 = {"id": "244", "email": "marcus.shah783@example.com", "phone": "(615) 212-5955"}
+
+        leads = [lead1, lead2, lead3, lead4]
+        survivors = deduplicate_leads(leads, tracker)
+
+        self.assertEqual(len(survivors), 2)
+        survivor_ids = [s["id"] for s in survivors]
+        self.assertIn("4", survivor_ids)
+        self.assertIn("244", survivor_ids)  # Real phone and base email selected over ID 5
+
+        # Check tracker logs
+        merged = tracker.removed_records
+        self.assertEqual(len(merged), 2)
+        self.assertEqual(merged[0]["id"], "180")
+        self.assertEqual(merged[0]["surviving_id"], "4")
+        self.assertEqual(merged[1]["id"], "5")
+        self.assertEqual(merged[1]["surviving_id"], "244")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 

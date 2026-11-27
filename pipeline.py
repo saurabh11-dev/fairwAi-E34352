@@ -4,6 +4,7 @@ Candidate ID: E34352
 
 import csv
 import re
+from collections import defaultdict
 from datetime import datetime
 from typing import Tuple, Optional, List, Dict
 
@@ -289,4 +290,66 @@ class RemovedTracker:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(self.removed_records)
+
+
+def canonical_email(raw_email: Optional[str]) -> str:
+    """Extracts canonical email by removing sub-addressing (+ tags).
+    e.g., 'marcus.shah783+b@example.com' -> 'marcus.shah783@example.com'.
+    """
+    clean = clean_email(raw_email)
+    if not clean or "@" not in clean:
+        return clean
+    user, domain = clean.split("@", 1)
+    base_user = user.split("+", 1)[0]
+    return f"{base_user}@{domain}"
+
+
+def deduplicate_leads(
+    leads: List[Dict[str, str]],
+    tracker: RemovedTracker
+) -> List[Dict[str, str]]:
+    """Deduplicates valid leads belonging to the same individual.
+    Groups leads by canonical email and phone number identity.
+    Selects the most legitimate record (prioritizing real phone over 999 fake phone,
+    and base email over +tag alias), merging secondary records into the survivor.
+    Logs all merged records in tracker with surviving_id.
+    """
+    clusters = defaultdict(list)
+    for lead in leads:
+        c_email = canonical_email(lead.get("email", ""))
+        clusters[c_email].append(lead)
+
+    surviving_leads: List[Dict[str, str]] = []
+
+    for c_email, cluster in clusters.items():
+        if len(cluster) == 1:
+            surviving_leads.append(cluster[0])
+            continue
+
+        # Sort cluster to select best surviving record:
+        # 1. Prefer standard email without '+' subaddress
+        # 2. Prefer legitimate phone number (avoid '999' / '000' / '555' fake prefixes)
+        # 3. Stable sort by lowest integer id
+        def lead_sort_key(row: Dict[str, str]):
+            email_val = row.get("email", "")
+            has_plus = "+" in email_val
+            digits = re.sub(r"\D", "", row.get("phone", ""))
+            is_suspicious_phone = digits.startswith("999") or digits.startswith("000") or digits.startswith("555")
+            row_id = int(row.get("id", 0)) if str(row.get("id", "")).isdigit() else 999999
+            return (has_plus, is_suspicious_phone, row_id)
+
+        sorted_cluster = sorted(cluster, key=lead_sort_key)
+        survivor = sorted_cluster[0]
+        surviving_leads.append(survivor)
+
+        # Log all duplicate rows as merged
+        for duplicate in sorted_cluster[1:]:
+            tracker.log_removal(
+                duplicate,
+                reason="duplicate_merged",
+                surviving_id=survivor.get("id", "")
+            )
+
+    return surviving_leads
+
 
