@@ -1,0 +1,234 @@
+id,name,email,phone,city,state,pet,pet_count,move_date,source,miles,company_type,risk_score,last_seen,flag
+1,Marcus Patel,marcus.patel844@example.com,+16174651312,Boston,MA,dog,1,2026-12-28,web,340.51,relocation firm,87,2026-11-03,high_risk_score_87
+2,Marcus Wong,marcus.wong63@example.com,+16153284539,Nashville,TN,2 dogs,2,2026-12-16,,2594.0,breeder,77,2026-09-13,
+3,Sofia Khan,sofia.khan982@example.com,+12062502367,Seattle,WA,2 dogs,2,2026-12-03,CitizenShipper,631.0,relocation firm,27,2026-06-02,
+4,Carlos Patel,carlos.patel422@example.com,+13127911453,Chicago,IL,Dog,1,2026-12-14,,413.0,rescue,86,2026-07-08,high_risk_score_86
+244,Marcus Shah,marcus.shah783@example.com,+16152125955,Nashville,TN,dog,1,2026-12-21,Referral,184.0,relocation firm,59,2026-05-15,
+6,Zoe Haddad,zoe.haddad638@example.com,+16175599884,Boston,MA,bird,1,2026-11-24,Facebook,2618.0,breeder,81,2026-05-18,high_risk_score_81
+7,Priya Reid,priya.reid251@example.com,+13034422062,Denver,CO,Dog,1,2027-01-17,,2610.0,individual,24,2026-06-07,
+8,Jonas Reid,jonas.reid631@example.com,+16155710348,Nashville,TN,Doggo,1,2026-12-14,,904.0,individual,16,2026-09-08,
+9,Ivan Petrov,ivan.petrov92@example.com,+13036922636,Denver,CO,cat + dog,2,2026-12-02,web,815.24,relocation firm,27,2026-05-27,
+10,Pedro Shah,pedro.shah143@example.com,+13032014195,Denver,CO,Doggo,1,2026-12-15,Referral,1308.0,breeder,45,2026-04-14,
+11,Dana Moreau,dana.moreau464@example.com,+16179078111,Boston,MA,puppy,1,2026-12-11,Referral,2066.0,relocation firm,3,2026-03-10,
+12,Pedro Reid,pedro.reid655@example.com,+16153908251,Nashville,TN,Dog,1,2026-12-08,fb,1721.0,relocation firm,71,2026-01-22,
+13,James Smith,james.smith254@example.com,+13058907896,Miami,FL,Dog,1,2026-12-05,,371.0,individual,44,2026-03-24,
+14,Mei Brown,mei.brown770@example.com,+13105120709,Los Angeles,CA,cat + dog,2,2026-12-12,fb,264.0,rescue,26,2026-01-12,
+78,Dev Wong,dev.wong357@example.com,+13103224604,Los Angeles,CA,CAT,1,2027-01-09,CitizenShipper,1791.0,individual,52,2026-07-22,
+16,Lena Haddad,lena.haddad110@example.com,+12122184339,New York,NY,CAT,1,2026-11-30,,1123.0,breeder,73,2026-07-02,
+17,Grace Petrov,grace.petrov848@example.com,+17044731289,Charlotte,NC,dog,1,2027-01-15,web,1370.12,breeder,53,2026-06-20,
+18,Tom Smith,tom.smith652@example.com,+16026590115,Phoenix,AZ,puppy,1,2027-01-10,fb,1868.0,relocation firm,31,2026-09-24,
+20,Yara Smith,yara.smith592@example.com,+12123406627,New York,NY,cat + dog,2,2026-12-12,web,1462.71,individual,44,2026-05-25,
+21,Chen Kim,chen.kim67@example.com,+12129244553,New York,NY,puppy,1,2026-11-30,Referral,321.0,individual,48,2026-03-20,
+22,Tom Reid,tom.reid222@example.com,+12064578723,Seattle,WA,CAT,1,2027-01-01,fb,622.0,individual,20,2026-06-20,
+23,Carlos Ito,carlos.ito699@example.com,+15122286691,Austin,TX,Doggo,1,2026-12-14,,1265.0,breeder,13,2026-09-06,
+24,Mei Lund,mei.lund741@example.com,+16155092883,Nashville,TN,2 dogs,2,2026-12-21,CitizenShipper,2356.0,relocation firm,63,2026-09-13,
+25,James Cruz,james.cruz873@example.com,+15122247542,Austin,TX,dog,1,2026-12-10,Referral,1500.0,relocation firm,35,2026-01-20,
+255,Aisha Novak,aisha.novak150@example.com,+16027364024,Phoenix,AZ,bird,1,2027-01-18,web,766.77,individual,64,2026-06-19,
+27,Jonas Haddad,jonas.haddad236@example.com,+14042855145,Atlanta,GA,Dog,1,2026-12-27,Referral,770.0,individual,12,2026-02-15,
+28,Dana Novak,dana.novak610@example.com,+13107007484,Los Angeles,CA,dog,1,2026-11-24,citizen shipper,1545.0,rescue,46,2026-08-03,
+29,Dev Mendez,dev.mendez601@example.com,+13055327813,Miami,FL,2 dogs,2,2026-12-25,CitizenShipper,1529.0,individual,72,2026-03-20,
+30,Zoe Smith,zoe.smith194@example.com,+12128683590,New York,NY,CAT,1,2027-01-18,fb,2796.0,rescue,6,2026-10-21,
+31,Maria Lund,maria.lund963@example.com,+12063996370,Seattle,WA,Doggo,1,2026-12-01,referral,650.0,rescue,78,2026-01-14,
+32,Tom Clark,tom.clark847@example.com,+16028998579,Phoenix,AZ,puppy,1,2027-01-09,fb,417.0,rescue,54,2026-11-24,
+33,Raj Moreau,raj.moreau712@example.com,+13032857302,Denver,CO,dog,1,2026-12-24,referral,1670.0,relocation firm,79,2026-08-06,suspicious_prompt_in_pet_field
+34,Priya Reid,priya.reid592@example.com,+13057038135,Miami,FL,cat + dog,2,2026-12-17,,95.0,rescue,74,2026-04-15,
+35,Lena Brown,lena.brown257@example.com,+15124932121,Austin,TX,cat,1,2026-11-25,Referral,1883.0,rescue,90,2026-11-03,high_risk_score_90
+36,Nina Fox,nina.fox260@example.com,+17048550297,Charlotte,NC,cat,1,2026-12-01,,614.0,rescue,2,2026-06-27,
+37,Dana Patel,dana.patel496@example.com,+16027282845,Phoenix,AZ,Doggo,1,2027-01-08,Facebook,2788.0,breeder,57,2026-01-26,
+38,Chen Hale,chen.hale702@example.com,+16024802349,Phoenix,AZ,bird,1,2027-01-15,,1065.0,breeder,73,2026-05-07,
+39,Priya Smith,priya.smith389@example.com,+12129192805,New York,NY,dog,1,2026-12-08,fb,2450.0,rescue,26,2026-06-17,suspicious_prompt_in_pet_field
+40,Chen Baptiste,chen.baptiste773@example.com,+16172487810,Boston,MA,2 dogs,2,2026-12-24,Facebook,1031.0,relocation firm,59,2026-04-21,
+41,Carlos Baptiste,carlos.baptiste259@example.com,+15125894140,Austin,TX,cat,1,2026-12-31,Facebook,569.0,relocation firm,91,2026-04-11,high_risk_score_91
+42,Carlos Novak,carlos.novak147@example.com,+16025056902,Phoenix,AZ,2 dogs,2,2026-12-29,citizen shipper,148.0,individual,4,2026-10-14,
+43,Maria Shah,maria.shah7@example.com,+12064863122,Seattle,WA,dog,1,2026-12-09,citizen shipper,281.0,individual,72,2026-11-16,
+44,Dev Novak,dev.novak89@example.com,+16155380736,Nashville,TN,Dog,1,2026-12-27,Referral,806.0,rescue,38,2026-08-20,
+45,Nina Shah,nina.shah769@example.com,+16025389080,Phoenix,AZ,Doggo,1,2026-11-26,referral,2244.0,rescue,50,2026-03-19,
+47,Lena Khan,lena.khan853@example.com,+16154781843,Nashville,TN,2 dogs,2,2026-12-30,fb,1548.0,breeder,33,2026-02-04,
+48,Dev Shah,dev.shah665@example.com,+13122777707,Chicago,IL,rabbit,1,2026-12-21,CitizenShipper,41.0,relocation firm,83,2026-01-20,high_risk_score_83
+49,Lena Novak,lena.novak532@example.com,+12065458313,Seattle,WA,cat,1,2026-12-05,Facebook,2061.0,rescue,94,2026-06-27,high_risk_score_94
+51,Ivan Smith,ivan.smith865@example.com,+13123836594,Chicago,IL,Dog,1,2026-12-07,,1385.0,relocation firm,51,2026-05-13,
+52,James Singh,james.singh925@example.com,+17043017611,Charlotte,NC,dog,1,2026-12-28,fb,2223.0,individual,0,2027-03-14,future_last_seen_2027-03-14
+54,Yara Haddad,yara.haddad216@example.com,+13033619036,Denver,CO,CAT,1,2026-12-13,,1433.0,individual,48,2026-07-10,
+161,Carlos Rossi,carlos.rossi44@example.com,+13035645241,Denver,CO,rabbit,1,2027-01-11,,2677.0,relocation firm,59,2026-06-15,
+56,Jonas Petrov,jonas.petrov22@example.com,+16176532724,Boston,MA,Dog,1,2026-12-21,Facebook,264.0,breeder,41,2026-04-13,
+57,Emily Mendez,emily.mendez216@example.com,+15123800356,Austin,TX,2 dogs,2,2026-11-22,citizen shipper,2225.0,individual,28,2026-10-16,
+58,Emily Rossi,emily.rossi671@example.com,+13108895463,Los Angeles,CA,cat,1,2026-12-19,web,670.46,individual,36,2026-09-06,
+59,Luis Weber,luis.weber921@example.com,+15127236225,Austin,TX,dog,1,2026-12-28,referral,130.0,relocation firm,27,2026-02-14,
+60,Zoe Patel,zoe.patel318@example.com,+16023333362,Phoenix,AZ,2 dogs,2,2027-01-12,CitizenShipper,2683.0,breeder,17,2026-08-14,
+61,Emily Reid,emily.reid793@example.com,+13104771055,Los Angeles,CA,cat + dog,2,2027-01-05,Referral,2068.0,rescue,30,2026-10-13,
+62,Ivan Lund,ivan.lund993@example.com,+17043241003,Charlotte,NC,dog,1,2026-12-29,,917.0,individual,28,2026-10-20,
+63,Marcus Rossi,marcus.rossi525@example.com,+15127029354,Austin,TX,rabbit,1,2026-11-26,CitizenShipper,1920.0,breeder,13,2026-03-08,
+64,Tom Weber,tom.weber297@example.com,+17047772063,Charlotte,NC,CAT,1,2026-12-08,fb,1296.0,relocation firm,59,2026-02-13,
+65,Dana Singh,dana.singh98@example.com,+16175616333,Boston,MA,puppy,1,2026-12-04,Facebook,2252.0,relocation firm,47,2026-01-16,
+66,Lena Weber,lena.weber826@example.com,+16157997088,Nashville,TN,Doggo,1,2026-12-31,,2778.0,breeder,81,2026-08-01,high_risk_score_81
+67,Priya Singh,priya.singh300@example.com,+12069359425,Seattle,WA,CAT,1,2027-01-06,fb,1674.0,individual,36,2026-11-13,
+68,Chen Hale,chen.hale191@example.com,+16153222855,Nashville,TN,cat,1,2026-12-09,Facebook,2691.0,breeder,85,2026-06-15,high_risk_score_85
+69,Lena Hale,lena.hale638@example.com,+12062405509,Seattle,WA,Doggo,1,2027-01-02,fb,2491.0,rescue,86,2026-07-18,high_risk_score_86
+70,Ivan Moreau,ivan.moreau474@example.com,+12068377257,Seattle,WA,rabbit,1,2026-12-29,citizen shipper,1013.0,individual,16,2026-10-27,
+71,Nina Weber,nina.weber496@example.com,+17043362528,Charlotte,NC,cat,1,2027-01-17,web,1690.13,individual,92,2026-01-15,high_risk_score_92
+73,Jonas Cruz,jonas.cruz757@example.com,+16178360735,Boston,MA,dog,1,2026-11-29,fb,301.0,individual,72,2026-05-17,
+74,Raj Hale,raj.hale99@example.com,+15123583046,Austin,TX,bird,1,2026-12-20,,1760.0,rescue,14,2026-06-02,
+75,Maria Haddad,maria.haddad893@example.com,+15125255654,Austin,TX,cat + dog,2,2026-12-15,web,1389.39,individual,32,2026-03-25,
+76,Emily Petrov,emily.petrov52@example.com,+14048742597,Atlanta,GA,rabbit,1,2026-12-22,referral,1509.0,individual,32,2026-06-04,
+77,Grace Haddad,grace.haddad774@example.com,+12123069230,New York,NY,puppy,1,2027-01-15,fb,791.0,rescue,98,2026-11-09,high_risk_score_98
+79,Jonas Clark,jonas.clark803@example.com,+14045902017,Atlanta,GA,2 dogs,2,2027-01-10,Referral,2558.0,rescue,54,2026-04-22,
+80,Marcus Petrov,marcus.petrov138@example.com,+14048078097,Atlanta,GA,bird,1,2027-01-03,Referral,2417.0,individual,76,2026-04-15,
+81,Carlos Rossi,carlos.rossi932@example.com,+13058878032,Miami,FL,Dog,1,2026-12-11,referral,2239.0,rescue,34,2026-10-19,
+82,Dana Mendez,dana.mendez553@example.com,+13124229047,Chicago,IL,cat,1,2026-12-18,referral,1256.0,individual,16,2026-06-27,
+83,Maria Ortiz,maria.ortiz870@example.com,+13122934530,Chicago,IL,cat,1,2026-12-14,Facebook,1020.0,relocation firm,39,2026-06-07,
+84,Hannah Haddad,hannah.haddad523@example.com,+13057693992,Miami,FL,Doggo,1,2027-01-19,Facebook,2455.0,breeder,9,2026-05-04,
+86,Hannah Hale,hannah.hale501@example.com,+13056005601,Miami,FL,bird,1,2026-11-28,CitizenShipper,1464.0,relocation firm,51,2026-01-18,
+87,Priya Petrov,priya.petrov463@example.com,+16159360023,Nashville,TN,dog,1,2027-01-18,Facebook,2771.0,individual,16,2026-11-27,
+88,Jonas Weber,jonas.weber973@example.com,+12128453642,New York,NY,CAT,1,2026-11-26,web,1171.28,rescue,42,2026-10-19,
+89,Omar Singh,omar.singh951@example.com,+15122189106,Austin,TX,cat,1,2026-12-20,web,216.86,rescue,6,2026-02-07,
+90,Maria Khan,maria.khan227@example.com,+16029128072,Phoenix,AZ,Dog,1,2027-01-05,Referral,1736.0,individual,28,2026-10-01,
+91,Lena Mendez,lena.mendez841@example.com,+13055803737,Miami,FL,cat,1,2026-11-24,Facebook,2563.0,relocation firm,27,2026-04-20,
+92,Yara Hale,yara.hale504@example.com,+17046003097,Charlotte,NC,dog,1,2027-01-09,referral,1549.0,rescue,14,2026-11-03,
+93,Raj Rossi,raj.rossi108@example.com,+12128542493,New York,NY,dog,1,2026-12-19,Facebook,2590.0,rescue,62,2026-02-06,
+94,Grace Smith,grace.smith860@example.com,+16156093072,Nashville,TN,2 dogs,2,2027-01-04,Referral,592.0,individual,28,2026-01-10,
+95,Emily Smith,emily.smith503@example.com,+13129443329,Chicago,IL,bird,1,2026-12-18,fb,1336.0,individual,28,2026-02-10,
+96,Mei Clark,mei.clark940@example.com,+12123740157,New York,NY,cat,1,2026-12-26,,2670.0,rescue,78,2026-05-17,
+98,Nina Reid,nina.reid729@example.com,+12128728545,New York,NY,rabbit,1,2027-01-13,citizen shipper,2425.0,individual,64,2026-07-27,
+99,Chen Singh,chen.singh161@example.com,+12069494539,Seattle,WA,cat + dog,2,2026-12-21,referral,268.0,rescue,26,2026-04-06,
+100,Aisha Shah,aisha.shah977@example.com,+13125841303,Chicago,IL,bird,1,2026-12-15,web,1708.15,rescue,30,2026-09-25,
+101,Chen Patel,chen.patel876@example.com,+16175533874,Boston,MA,Dog,1,2027-01-11,web,1435.37,rescue,74,2026-02-17,
+102,Zoe Baptiste,zoe.baptiste330@example.com,+12062877152,Seattle,WA,bird,1,2026-12-25,,811.0,rescue,70,2026-07-25,
+103,Maria Clark,maria.clark358@example.com,+17047374792,Charlotte,NC,puppy,1,2026-11-22,Facebook,681.0,relocation firm,59,2026-10-23,
+105,Mei Cruz,mei.cruz864@example.com,+16154354864,Nashville,TN,dog,1,2026-12-27,,2553.0,rescue,50,2026-07-09,
+106,Raj Lund,raj.lund196@example.com,+13126873913,Chicago,IL,Dog,1,2027-01-14,CitizenShipper,2791.0,relocation firm,59,2026-08-10,
+108,Emily Clark,emily.clark702@example.com,+13107564814,Los Angeles,CA,dog,1,2027-01-02,Facebook,1389.0,rescue,42,2026-10-09,
+109,Maria Shah,maria.shah362@example.com,+14048509053,Atlanta,GA,2 dogs,2,2026-12-09,,1500.0,breeder,9,2026-05-13,
+112,Nina Haddad,nina.haddad910@example.com,+12067658736,Seattle,WA,Doggo,1,2026-12-07,,1558.0,breeder,5,2026-01-19,
+113,Omar Clark,omar.clark192@example.com,+14043703485,Atlanta,GA,bird,1,2026-12-13,fb,1046.0,breeder,29,2026-09-17,
+114,James Ortiz,james.ortiz132@example.com,+13122415604,Chicago,IL,puppy,1,2026-12-06,web,1346.51,individual,96,2026-10-12,high_risk_score_96
+115,Maria Ortiz,maria.ortiz3@example.com,+13125331747,Chicago,IL,puppy,1,2026-12-26,referral,2416.0,breeder,1,2026-11-17,
+116,James Cruz,james.cruz399@example.com,+17043659762,Charlotte,NC,Dog,1,2026-12-24,Facebook,2204.0,relocation firm,99,2026-03-07,high_risk_score_99
+117,Omar Mendez,omar.mendez311@example.com,+12124785805,New York,NY,bird,1,2027-01-09,referral,981.0,individual,36,2026-06-03,
+118,Hannah Petrov,hannah.petrov243@example.com,+13038337246,Denver,CO,puppy,1,2026-12-08,citizen shipper,1495.0,individual,44,2026-10-13,
+120,Raj Moreau,raj.moreau468@example.com,+14049152806,Atlanta,GA,cat + dog,2,2027-01-14,CitizenShipper,1568.0,relocation firm,67,2026-05-08,
+121,Chen Ortiz,chen.ortiz9@example.com,+12123809878,New York,NY,dog,1,2027-01-10,web,493.99,breeder,89,2026-02-12,high_risk_score_89
+122,Maria Hale,maria.hale947@example.com,+13103020472,Los Angeles,CA,2 dogs,2,2027-01-03,referral,2042.0,rescue,38,2026-11-25,
+123,Chen Singh,chen.singh250@example.com,+17049964403,Charlotte,NC,bird,1,2026-12-05,citizen shipper,757.0,breeder,89,2026-08-25,high_risk_score_89
+124,Pedro Mendez,pedro.mendez727@example.com,+13128993831,Chicago,IL,bird,1,2026-12-16,Facebook,2432.0,relocation firm,55,2026-06-10,
+125,Jonas Clark,jonas.clark211@example.com,+16024558716,Phoenix,AZ,Doggo,1,2026-12-20,Referral,1066.0,rescue,18,2026-07-10,
+126,Chen Kim,chen.kim616@example.com,+16174576454,Boston,MA,dog,1,2026-11-23,Facebook,2693.0,individual,40,2026-01-26,
+127,Hannah Kim,hannah.kim672@example.com,+13054762134,Miami,FL,cat,1,2027-01-04,,344.0,individual,76,2026-10-04,
+128,Tom Shah,tom.shah413@example.com,+15127361120,Austin,TX,Doggo,1,2026-11-24,referral,2050.0,breeder,29,2026-05-19,
+129,Pedro Moreau,pedro.moreau745@example.com,+12127756388,New York,NY,bird,1,2026-11-29,fb,2356.0,relocation firm,31,2026-02-01,
+147,Hannah Brown,hannah.brown691@example.com,+16173724018,Boston,MA,bird,1,2027-01-01,referral,90.0,relocation firm,47,2026-03-19,
+131,Marcus Mendez,marcus.mendez405@example.com,+12066545041,Seattle,WA,Dog,1,2026-12-03,Referral,2675.0,breeder,49,2026-04-11,
+132,Hannah Hale,hannah.hale780@example.com,+14042448454,Atlanta,GA,dog,1,2026-12-04,referral,1373.0,individual,8,2026-03-17,
+133,Marcus Brown,marcus.brown960@example.com,+12069824683,Seattle,WA,dog,1,2026-12-22,Facebook,824.0,individual,60,2026-07-25,
+134,Tom Moreau,tom.moreau931@example.com,+17048538335,Charlotte,NC,dog,1,2026-12-05,Facebook,215.0,breeder,13,2026-09-07,
+135,Lena Hale,lena.hale447@example.com,+16023640749,Phoenix,AZ,cat + dog,2,2027-01-08,CitizenShipper,781.0,relocation firm,83,2026-05-26,high_risk_score_83
+136,Nina Cruz,nina.cruz283@example.com,+16157733098,Nashville,TN,Dog,1,2026-11-22,,1614.0,rescue,38,2026-01-13,
+137,James Baptiste,james.baptiste49@example.com,+13122792413,Chicago,IL,cat,1,2026-12-26,,2109.0,individual,60,2027-03-14,future_last_seen_2027-03-14
+138,Grace Petrov,grace.petrov598@example.com,+14045001784,Atlanta,GA,dog,1,2026-12-17,Referral,1480.0,rescue,14,2026-06-25,
+140,Zoe Ortiz,zoe.ortiz845@example.com,+12124400736,New York,NY,dog,1,2026-12-31,citizen shipper,1644.0,rescue,42,2026-09-11,
+141,Luis Moreau,luis.moreau578@example.com,+16155386978,Nashville,TN,Doggo,1,2027-01-18,,1641.0,rescue,66,2026-05-12,
+142,Nina Patel,nina.patel743@example.com,+14046316266,Atlanta,GA,rabbit,1,2026-11-30,Referral,1378.0,relocation firm,75,2026-10-20,
+143,Omar Novak,omar.novak880@example.com,+15122734384,Austin,TX,puppy,1,2026-12-10,Referral,2708.0,relocation firm,71,2026-07-26,
+144,Grace Haddad,grace.haddad382@example.com,+13124657726,Chicago,IL,cat + dog,2,2026-11-20,fb,1182.0,relocation firm,23,2026-04-21,
+145,Emily Wong,emily.wong341@example.com,+13129061793,Chicago,IL,puppy,1,2027-01-16,Referral,1965.0,individual,0,2026-03-27,
+146,Omar Reid,omar.reid949@example.com,+13124355060,Chicago,IL,bird,1,2026-12-23,fb,296.0,breeder,41,2026-02-26,
+148,Dana Weber,dana.weber635@example.com,+16154289545,Nashville,TN,Doggo,1,2027-01-08,Facebook,984.0,rescue,90,2026-09-16,high_risk_score_90
+149,Raj Ito,raj.ito655@example.com,+12122446121,New York,NY,puppy,1,2026-12-06,web,1258.28,relocation firm,79,2026-03-15,
+150,Marcus Cruz,marcus.cruz883@example.com,+12122517028,New York,NY,CAT,1,2026-12-13,,1421.0,breeder,97,2026-11-12,high_risk_score_97
+151,Pedro Cruz,pedro.cruz596@example.com,+13036820078,Denver,CO,dog,1,2027-01-12,fb,1400.0,rescue,46,2026-03-07,
+152,Raj Ito,raj.ito421@example.com,+13123506760,Chicago,IL,rabbit,1,2026-12-17,citizen shipper,238.0,rescue,26,2026-06-15,
+153,Nina Brown,nina.brown535@example.com,+13036005264,Denver,CO,CAT,1,2026-12-15,Facebook,947.0,breeder,85,2026-02-02,high_risk_score_85
+154,Priya Moreau,priya.moreau787@example.com,+16025115130,Phoenix,AZ,Doggo,1,2026-11-28,referral,2117.0,relocation firm,39,2026-03-09,
+155,Maria Clark,maria.clark136@example.com,+13053730048,Miami,FL,2 dogs,2,2027-01-03,referral,696.0,individual,56,2026-03-12,
+156,Marcus Moreau,marcus.moreau467@example.com,+17046178791,Charlotte,NC,cat + dog,2,2027-01-17,web,102.53,rescue,46,2026-11-26,
+259,Mei Mendez,mei.mendez263@example.com,+13032768907,Denver,CO,rabbit,1,2026-12-01,web,379.66,breeder,85,2026-10-05,high_risk_score_85
+158,Chen Moreau,chen.moreau984@example.com,+13129485243,Chicago,IL,2 dogs,2,2027-01-17,referral,1985.0,breeder,41,2026-02-13,
+159,Luis Shah,luis.shah398@example.com,+14048561733,Atlanta,GA,2 dogs,2,2026-12-30,Referral,2302.0,individual,24,2026-06-20,
+160,Nina Wong,nina.wong814@example.com,+16027398408,Phoenix,AZ,puppy,1,2026-11-29,referral,2569.0,relocation firm,51,2026-04-21,
+162,Emily Baptiste,emily.baptiste536@example.com,+16028441670,Phoenix,AZ,cat,1,2027-01-16,referral,2125.0,breeder,41,2026-07-04,
+164,Tom Moreau,tom.moreau52@example.com,+13108497769,Los Angeles,CA,puppy,1,2026-12-12,referral,1329.0,breeder,73,2026-01-18,
+165,Mei Patel,mei.patel733@example.com,+13038150860,Denver,CO,bird,1,2027-01-17,,2659.0,breeder,33,2026-09-18,
+167,Jonas Rossi,jonas.rossi84@example.com,+17049055733,Charlotte,NC,puppy,1,2026-12-18,citizen shipper,2121.0,relocation firm,75,2026-08-14,
+171,Marcus Kim,marcus.kim571@example.com,+13105022190,Los Angeles,CA,bird,1,2026-11-29,Facebook,2072.0,individual,12,2026-04-10,
+172,Grace Patel,grace.patel451@example.com,+13102481632,Los Angeles,CA,cat,1,2026-11-28,citizen shipper,1247.0,rescue,10,2026-03-10,
+174,Lena Baptiste,lena.baptiste956@example.com,+12067268675,Seattle,WA,cat + dog,2,2027-01-19,web,955.05,breeder,37,2026-11-04,
+176,Grace Ortiz,grace.ortiz399@example.com,+16028101848,Phoenix,AZ,Dog,1,2026-12-08,Referral,417.0,breeder,97,2026-04-17,high_risk_score_97
+177,Sofia Baptiste,sofia.baptiste10@example.com,+13129238627,Chicago,IL,dog,1,2027-01-16,Referral,581.0,rescue,46,2026-06-22,
+178,Dana Novak,dana.novak271@example.com,+16155754410,Nashville,TN,dog,1,2027-01-16,fb,2231.0,individual,52,2026-04-10,suspicious_prompt_in_pet_field
+179,Yara Mendez,yara.mendez3@example.com,+12062797181,Seattle,WA,dog,1,2026-12-12,referral,1856.0,rescue,90,2026-06-25,high_risk_score_90
+181,Luis Brown,luis.brown833@example.com,+16178482561,Boston,MA,CAT,1,2027-01-14,,1282.0,breeder,85,2026-06-06,high_risk_score_85
+183,Aisha Haddad,aisha.haddad320@example.com,+16153279579,Nashville,TN,2 dogs,2,2026-12-11,referral,2765.0,breeder,69,2026-04-03,
+184,Dev Novak,dev.novak292@example.com,+16176782839,Boston,MA,CAT,1,2026-12-07,citizen shipper,1991.0,relocation firm,23,2026-01-25,
+185,Nina Moreau,nina.moreau17@example.com,+15129874012,Austin,TX,Doggo,1,2026-12-03,,392.0,individual,60,2026-06-17,
+186,Omar Singh,omar.singh57@example.com,+17047378681,Charlotte,NC,puppy,1,2026-12-11,Facebook,2666.0,breeder,61,2026-05-08,
+187,Nina Weber,nina.weber121@example.com,+16023829550,Phoenix,AZ,dog,1,2026-12-12,referral,1407.0,rescue,10,2026-06-16,
+188,James Hale,james.hale410@example.com,+16159818332,Nashville,TN,cat + dog,2,2027-01-10,referral,247.0,breeder,93,2026-02-23,high_risk_score_93
+189,Omar Novak,omar.novak5@example.com,+13035032568,Denver,CO,CAT,1,2026-11-24,referral,2081.0,individual,52,2026-05-02,
+190,Raj Ortiz,raj.ortiz788@example.com,+13127547472,Chicago,IL,dog,1,2026-12-07,CitizenShipper,815.0,individual,8,2026-07-07,
+191,Zoe Rossi,zoe.rossi647@example.com,+12122105247,New York,NY,Dog,1,2027-01-14,,2288.0,relocation firm,19,2026-08-26,
+192,Yara Khan,yara.khan994@example.com,+16022046040,Phoenix,AZ,puppy,1,2026-12-11,Referral,458.0,individual,4,2026-04-13,
+195,Raj Shah,raj.shah41@example.com,+16157841532,Nashville,TN,cat + dog,2,2027-01-18,Facebook,251.0,individual,40,2027-03-14,future_last_seen_2027-03-14
+196,Emily Haddad,emily.haddad121@example.com,+12122012021,New York,NY,rabbit,1,2027-01-16,fb,2772.0,relocation firm,95,2026-06-12,high_risk_score_95
+197,Priya Singh,priya.singh234@example.com,+13057678808,Miami,FL,rabbit,1,2026-12-04,Facebook,1068.0,breeder,61,2026-06-16,
+199,Pedro Novak,pedro.novak502@example.com,+13034723122,Denver,CO,bird,1,2027-01-04,web,1554.67,rescue,90,2026-05-25,high_risk_score_90
+200,Ivan Ito,ivan.ito85@example.com,+13104348333,Los Angeles,CA,bird,1,2026-11-20,Referral,1904.0,individual,20,2026-08-04,
+201,Nina Singh,nina.singh507@example.com,+14047934187,Atlanta,GA,rabbit,1,2026-12-14,web,1135.24,rescue,30,2026-07-03,
+202,Mei Smith,mei.smith161@example.com,+14048463196,Atlanta,GA,CAT,1,2027-01-07,fb,1675.0,individual,32,2026-10-05,
+203,Ivan Khan,ivan.khan732@example.com,+13128269266,Chicago,IL,CAT,1,2026-11-25,referral,827.0,individual,60,2026-03-03,
+204,Sofia Hale,sofia.hale211@example.com,+13032953907,Denver,CO,cat,1,2026-12-12,,1666.0,relocation firm,75,2026-06-05,
+207,Nina Haddad,nina.haddad836@example.com,+17049625591,Charlotte,NC,2 dogs,2,2027-01-11,web,1449.04,relocation firm,3,2026-03-16,
+208,Ivan Weber,ivan.weber788@example.com,+16158816826,Nashville,TN,bird,1,2026-12-16,CitizenShipper,640.0,breeder,69,2026-03-21,
+209,Pedro Smith,pedro.smith394@example.com,+13032671996,Denver,CO,cat + dog,2,2026-11-22,Facebook,2500.0,breeder,13,2026-01-25,
+210,Mei Fox,mei.fox305@example.com,+14042262278,Atlanta,GA,cat + dog,2,2027-01-12,Referral,1113.0,breeder,65,2026-10-26,
+212,Chen Khan,chen.khan590@example.com,+14048258333,Atlanta,GA,rabbit,1,2027-01-13,web,643.74,individual,12,2026-03-01,
+213,Sofia Shah,sofia.shah890@example.com,+13107230810,Los Angeles,CA,cat + dog,2,2026-12-31,citizen shipper,621.0,breeder,85,2026-04-08,high_risk_score_85
+214,Raj Patel,raj.patel47@example.com,+15123685461,Austin,TX,2 dogs,2,2027-01-04,fb,2291.0,individual,12,2026-11-12,
+215,Zoe Singh,zoe.singh758@example.com,+16178402167,Boston,MA,dog,1,2026-11-22,referral,2069.0,relocation firm,71,2026-06-12,
+216,Luis Ortiz,luis.ortiz566@example.com,+16026077345,Phoenix,AZ,2 dogs,2,2026-12-06,citizen shipper,2513.0,rescue,74,2026-04-15,
+219,Yara Patel,yara.patel673@example.com,+16172136733,Boston,MA,puppy,1,2027-01-13,web,1570.83,breeder,9,2026-05-16,
+220,Carlos Alvarez,carlos.alvarez938@example.com,+16159946989,Nashville,TN,Doggo,1,2026-12-23,Facebook,690.0,rescue,18,2026-10-07,
+225,Raj Khan,raj.khan475@example.com,+13034039069,Denver,CO,bird,1,2027-01-11,citizen shipper,1612.0,breeder,21,2026-02-24,
+226,Sofia Haddad,sofia.haddad641@example.com,+12128531679,New York,NY,cat,1,2027-01-05,CitizenShipper,160.0,rescue,42,2026-01-22,
+227,Zoe Lund,zoe.lund528@example.com,+13126588541,Chicago,IL,cat + dog,2,2026-12-07,web,276.51,individual,84,2026-01-23,high_risk_score_84
+230,Nina Kim,nina.kim326@example.com,+13103329434,Los Angeles,CA,dog,1,2026-12-13,web,1596.92,breeder,77,2026-07-15,
+231,Jonas Lund,jonas.lund929@example.com,+13107519945,Los Angeles,CA,cat + dog,2,2026-12-02,citizen shipper,95.0,breeder,45,2026-01-18,
+232,Dana Moreau,dana.moreau550@example.com,+16027533033,Phoenix,AZ,cat + dog,2,2026-12-01,web,45.36,relocation firm,99,2026-02-25,high_risk_score_99
+233,Zoe Kim,zoe.kim825@example.com,+13056871042,Miami,FL,dog,1,2026-12-02,referral,2561.0,relocation firm,35,2026-02-27,
+234,Sofia Reid,sofia.reid971@example.com,+16029553456,Phoenix,AZ,dog,1,2026-12-19,CitizenShipper,2311.0,rescue,82,2026-11-09,high_risk_score_82
+236,Luis Kim,luis.kim580@example.com,+13032653238,Denver,CO,Doggo,1,2026-11-27,citizen shipper,1315.0,rescue,38,2026-05-09,
+237,Omar Smith,omar.smith412@example.com,+13037096953,Denver,CO,Doggo,1,2027-01-08,citizen shipper,1078.0,individual,80,2026-05-20,high_risk_score_80
+238,Jonas Singh,jonas.singh871@example.com,+14045301955,Atlanta,GA,Doggo,1,2027-01-02,web,137.94,relocation firm,43,2026-05-22,
+239,Maria Singh,maria.singh982@example.com,+12129315961,New York,NY,2 dogs,2,2026-11-23,citizen shipper,376.0,rescue,14,2026-07-19,
+240,Dev Weber,dev.weber361@example.com,+13038727498,Denver,CO,rabbit,1,2026-12-18,Referral,1456.0,individual,0,2026-09-07,
+242,Tom Novak,tom.novak458@example.com,+12129124214,New York,NY,rabbit,1,2026-12-22,,1051.0,relocation firm,51,2026-03-17,
+246,Sofia Patel,sofia.patel915@example.com,+13123797679,Chicago,IL,puppy,1,2026-12-17,Facebook,2227.0,rescue,94,2026-04-21,high_risk_score_94
+247,Grace Brown,grace.brown843@example.com,+13124140264,Chicago,IL,dog,1,2027-01-03,,109.0,relocation firm,27,2026-06-07,
+248,Mei Kim,mei.kim597@example.com,+16152114748,Nashville,TN,dog,1,2027-01-17,citizen shipper,724.0,breeder,81,2026-11-20,high_risk_score_81
+249,Pedro Hale,pedro.hale612@example.com,+12064272593,Seattle,WA,cat + dog,2,2026-12-20,web,366.61,breeder,81,2026-07-14,high_risk_score_81
+251,Carlos Reid,carlos.reid850@example.com,+16158046127,Nashville,TN,puppy,1,2026-11-26,CitizenShipper,2004.0,breeder,85,2026-02-26,high_risk_score_85
+252,Raj Baptiste,raj.baptiste654@example.com,+16028473130,Phoenix,AZ,rabbit,1,2026-12-14,citizen shipper,1495.0,breeder,97,2026-03-04,high_risk_score_97
+253,Maria Baptiste,maria.baptiste537@example.com,+16173991932,Boston,MA,CAT,1,2026-12-04,citizen shipper,2384.0,breeder,89,2026-05-21,high_risk_score_89
+256,Tom Khan,tom.khan653@example.com,+15126670470,Austin,TX,Dog,1,2027-01-05,,1270.0,relocation firm,3,2026-05-08,
+257,Carlos Novak,carlos.novak16@example.com,+16026415422,Phoenix,AZ,puppy,1,2026-12-29,web,941.38,rescue,62,2026-01-13,
+258,Maria Baptiste,maria.baptiste73@example.com,+15129136838,Austin,TX,puppy,1,2026-12-19,fb,1714.0,relocation firm,95,2026-06-16,high_risk_score_95
+260,Priya Rossi,priya.rossi757@example.com,+14043402232,Atlanta,GA,dog,1,2027-01-10,Facebook,1438.0,rescue,50,2026-08-07,
+261,Hannah Mendez,hannah.mendez421@example.com,+14045659300,Atlanta,GA,Dog,1,2027-01-02,CitizenShipper,680.0,breeder,65,2026-01-09,
+262,Yara Alvarez,yara.alvarez922@example.com,+15123046578,Austin,TX,Doggo,1,2026-12-31,referral,2677.0,rescue,22,2026-07-22,
+268,Mei Baptiste,mei.baptiste622@example.com,+13036837566,Denver,CO,cat,1,2026-12-25,web,1120.33,rescue,62,2026-10-21,
+266,Chen Petrov,chen.petrov551@example.com,+13055932839,Miami,FL,rabbit,1,2026-12-12,Facebook,407.0,rescue,62,2026-10-07,
+267,Carlos Weber,carlos.weber340@example.com,+13123139691,Chicago,IL,cat,1,2027-01-14,Referral,782.0,relocation firm,11,2026-09-03,
+270,Chen Wong,chen.wong260@example.com,+17042938269,Charlotte,NC,puppy,1,2026-12-21,web,334.92,breeder,81,2026-03-04,high_risk_score_81
+271,Grace Clark,grace.clark504@example.com,+12068788521,Seattle,WA,Doggo,1,2027-01-04,web,1703.18,relocation firm,99,2026-06-05,high_risk_score_99
+272,Grace Cruz,grace.cruz819@example.com,+13056706591,Miami,FL,Doggo,1,2026-11-21,,572.0,individual,88,2026-08-14,high_risk_score_88
+273,Jonas Hale,jonas.hale97@example.com,+13123668903,Chicago,IL,dog,1,2027-01-17,web,902.23,breeder,5,2026-03-04,
+274,Yara Cruz,yara.cruz708@example.com,+16174176751,Boston,MA,puppy,1,2027-01-01,fb,550.0,rescue,50,2026-05-02,
+276,Grace Lund,grace.lund695@example.com,+14049707279,Atlanta,GA,Dog,1,2027-01-02,Facebook,1684.0,rescue,70,2026-05-02,
+277,Omar Cruz,omar.cruz210@example.com,+16177315191,Boston,MA,CAT,1,2027-01-19,web,1542.24,rescue,42,2026-04-13,
+278,Carlos Alvarez,carlos.alvarez731@example.com,+13037518327,Denver,CO,rabbit,1,2027-01-03,,841.0,relocation firm,63,2026-07-22,
+279,Priya Lund,priya.lund94@example.com,+13105495878,Los Angeles,CA,cat + dog,2,2026-12-18,,1899.0,rescue,50,2026-07-23,
+280,Tom Brown,tom.brown768@example.com,+12127428050,New York,NY,cat,1,2026-11-23,Referral,329.0,rescue,10,2026-08-10,
+281,Tom Haddad,tom.haddad205@example.com,+13038757885,Denver,CO,Dog,1,2026-11-23,CitizenShipper,2610.0,relocation firm,83,2026-07-10,high_risk_score_83
+284,Ivan Mendez,ivan.mendez748@example.com,+16152523462,Nashville,TN,puppy,1,2027-01-06,web,640.01,individual,68,2026-05-14,
+286,Maria Ito,maria.ito54@example.com,+12128542895,New York,NY,rabbit,1,2027-01-05,Referral,1517.0,relocation firm,19,2026-05-03,
+288,Jonas Khan,jonas.khan679@example.com,+12063041742,Seattle,WA,cat,1,2026-12-15,fb,1638.0,rescue,94,2026-08-03,high_risk_score_94
+290,Emily Wong,emily.wong815@example.com,+13035898857,Denver,CO,bird,1,2026-11-24,CitizenShipper,579.0,rescue,38,2026-10-23,
+291,Ivan Haddad,ivan.haddad488@example.com,+13052721509,Miami,FL,rabbit,1,2026-11-20,Facebook,1626.0,rescue,30,2026-05-18,

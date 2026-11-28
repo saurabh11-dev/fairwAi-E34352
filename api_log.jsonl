@@ -1,0 +1,17 @@
+{"t": 1795840914.4, "code": 500, "path": "/batch?emails=marcus.patel844%40example.com%2Cmarcus.wong63%", "credits_left": 109}
+{"t": 1795840915.4, "code": 200, "path": "/batch?emails=marcus.patel844%40example.com%2Cmarcus.wong63%", "credits_left": 107}
+{"t": 1795840917.51, "code": 500, "path": "/batch?emails=tom.reid222%40example.com%2Ccarlos.ito699%40ex", "credits_left": 107}
+{"t": 1795840918.51, "code": 200, "path": "/batch?emails=tom.reid222%40example.com%2Ccarlos.ito699%40ex", "credits_left": 105}
+{"t": 1795840920.61, "code": 200, "path": "/batch?emails=carlos.novak147%40example.com%2Cmaria.shah7%40", "credits_left": 103}
+{"t": 1795840922.72, "code": 429, "path": "/batch?emails=dana.singh98%40example.com%2Clena.weber826%40e", "credits_left": 103}
+{"t": 1795840928.22, "code": 200, "path": "/batch?emails=dana.singh98%40example.com%2Clena.weber826%40e", "credits_left": 101}
+{"t": 1795840930.33, "code": 200, "path": "/batch?emails=jonas.weber973%40example.com%2Comar.singh951%4", "credits_left": 99}
+{"t": 1795840932.44, "code": 200, "path": "/batch?emails=omar.clark192%40example.com%2Cjames.ortiz132%4", "credits_left": 97}
+{"t": 1795840934.54, "code": 200, "path": "/batch?emails=tom.moreau931%40example.com%2Clena.hale447%40e", "credits_left": 95}
+{"t": 1795840936.65, "code": 200, "path": "/batch?emails=marcus.moreau467%40example.com%2Cmei.mendez263", "credits_left": 93}
+{"t": 1795840940.95, "code": 200, "path": "/batch?emails=omar.singh57%40example.com%2Cnina.weber121%40e", "credits_left": 91}
+{"t": 1795840943.05, "code": 500, "path": "/batch?emails=chen.khan590%40example.com%2Csofia.shah890%40e", "credits_left": 91}
+{"t": 1795840944.05, "code": 200, "path": "/batch?emails=chen.khan590%40example.com%2Csofia.shah890%40e", "credits_left": 89}
+{"t": 1795840946.16, "code": 500, "path": "/batch?emails=tom.novak458%40example.com%2Csofia.patel915%40", "credits_left": 89}
+{"t": 1795840947.16, "code": 200, "path": "/batch?emails=tom.novak458%40example.com%2Csofia.patel915%40", "credits_left": 87}
+{"t": 1795840951.2, "code": 200, "path": "/batch?emails=jonas.hale97%40example.com%2Cyara.cruz708%40ex", "credits_left": 85}

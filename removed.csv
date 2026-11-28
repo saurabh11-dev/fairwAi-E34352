@@ -1,0 +1,60 @@
+id,name,email,phone,city,state,pet,move_date,source,miles,surviving_id,reason
+19,,,,,,,,,,,junk_empty_row
+46,James Cruz,james.cruz399example.com,(704) 365-9762,Charlotte,NC,Dog,12/24/2026,Facebook,2204,,unusable_email
+53,Zoe Smith,zoe.smith194example.com,(212) 868-3590,New York,New York,CAT,2027/01/18,fb,2796,,unusable_email
+85,Omar Alvarez,omar.alvarez863@example.com,305-267-7682,Miami,fl,cat + dog,2024-01-05,referral ,638,,move_date_before_2026-11-01
+110,"  HADDAD, Ivan ",ivan.haddad488example.com,305.272.1509,Miami,Florida,rabbit,2026/11/20,Facebook,1626,,unusable_email
+139,Tom Novak,tom.novak458example.com,(212) 912-4214,New York,NY,rabbit,12/22/2026,,1051,,unusable_email
+166,asdf,asdf,000,,,,,,,,junk_test_data
+169,Lena Singh,lena.singh844@example.com,+1 6153029100,Nashville,tn,puppy,2024-01-05,referral ,938,,move_date_before_2026-11-01
+206,maria khan,maria.khan227example.com,602-912-8072,Phoenix,AZ,Dog,2027/01/05,Referral,1736,,unusable_email
+221,TEST TEST,test@test.com,555-555-5555,Nowhere,ZZ,dog,,,,,junk_test_data
+223,Sofia Ito,sofia.ito428@example.com,(212) 984-2630,New York,NY,CAT,2024-01-05,referral ,2237,,move_date_before_2026-11-01
+228,"  LUND, Ivan ",ivan.lund993example.com,704-324-1003,Charlotte,North Carolina,dog ,2026/12/29,,917,,unusable_email
+180,"  PATEL, Carlos ",CARLOS.PATEL422@EXAMPLE.COM,312.791.1453,Chicago,IL,Dog,12/14/2026,,413,4,duplicate_merged
+5,marcus shah,marcus.shah783+b@example.com,9990007010,Portland,Oregon,dog,21-12-2026,Referral,184,244,duplicate_merged
+283,ivan petrov,ivan.petrov92@example.com,303-692-2636,Denver,Colorado,cat + dog,2026/12/02,web,1312,9,duplicate_merged
+275,"  MOREAU, Dana ",dana.moreau464@example.com,617.907.8111,Boston,ma,puppy,2026-12-11,Referral,2066,11,duplicate_merged
+235,Pedro Reid,pedro.reid655@example.com,615.390.8251,Nashville,tn,Dog,2026-12-08,fb,1721,12,duplicate_merged
+15,Dev Wong,dev.wong357+b@example.com,(999) 000-1901,Portland,OR,CAT,Jan 09 2027,CitizenShipper,1791,78,duplicate_merged
+289,Chen Kim,chen.kim67@example.com,212-924-4553,New York,NY,puppy,30-11-2026,Referral,321,21,duplicate_merged
+72,"  REID, Tom ",tom.reid222@example.com,(206) 457-8723,Seattle,WA,CAT,2027-01-01,fb,622,22,duplicate_merged
+250,carlos ito,CARLOS.ITO699@EXAMPLE.COM,(512) 228-6691,Austin,tx,Doggo,12/14/2026,,1265,23,duplicate_merged
+119,"  LUND, Mei ",mei.lund741@example.com,615-509-2883,Nashville,Tennessee,2 dogs,12/21/2026,CitizenShipper,2356,24,duplicate_merged
+26,Aisha Novak,aisha.novak150+b@example.com,(999) 000-5925,Portland,OR,bird,01/18/2027,web,1234,255,duplicate_merged
+107,zoe smith,zoe.smith194@example.com,212-868-3590,New York,NY,CAT,2027/01/18,fb,2796,30,duplicate_merged
+243,Lena Brown,LENA.BROWN257@EXAMPLE.COM,(512) 493-2121,Austin,TX,cat,Nov 25 2026,Referral,1883,35,duplicate_merged
+222,Chen Hale,chen.hale702@example.com,+1 6024802349,Phoenix,AZ,bird,2027-01-15,,1065,38,duplicate_merged
+50,Chen Baptiste,CHEN.BAPTISTE773@EXAMPLE.COM,617.248.7810,Boston,Massachusetts,2 dogs,12/24/2026,Facebook,1031,40,duplicate_merged
+292,Maria Shah,MARIA.SHAH7@EXAMPLE.COM,206-486-3122,Seattle,wa,dog ,09-12-2026,citizen shipper,281,43,duplicate_merged
+175,Ivan Smith,ivan.smith865@example.com,312-383-6594,Chicago,il,Dog,Dec 07 2026,,1385,51,duplicate_merged
+55,Carlos Rossi,carlos.rossi44+b@example.com,9990009615,Portland,Oregon,rabbit,Jan 11 2027,,2677,161,duplicate_merged
+224,Emily Mendez,emily.mendez216@example.com,512-380-0356,Austin,TX,2 dogs,2026-11-22,citizen shipper,2225,57,duplicate_merged
+193,zoe patel,ZOE.PATEL318@EXAMPLE.COM,6023333362,Phoenix,AZ,2 dogs,2027-01-12,CitizenShipper,2683,60,duplicate_merged
+182,Ivan Lund,ivan.lund993@example.com,(704) 324-1003,Charlotte,North Carolina,dog ,12/29/2026,,917,62,duplicate_merged
+97,Lena Hale,lena.hale638@example.com,(206) 240-5509,Seattle,wa,Doggo,02-01-2027,fb,2491,69,duplicate_merged
+265,"  ROSSI, Carlos ",carlos.rossi932@example.com,305-887-8032,Miami,FL,Dog,11-12-2026,referral ,2239,81,duplicate_merged
+111,hannah haddad,hannah.haddad523@example.com,305-769-3992,Miami,FL,Doggo,Jan 19 2027,Facebook,2455,84,duplicate_merged
+104,"  WEBER, Jonas ",JONAS.WEBER973@EXAMPLE.COM,(212) 845-3642,New York,ny,CAT,26-11-2026,web,1885,88,duplicate_merged
+245,"  SINGH, Omar ",omar.singh951@example.com,+1 5122189106,Austin,TX,cat,2026/12/20,web,349,89,duplicate_merged
+198,"  BAPTISTE, Zoe ",zoe.baptiste330@example.com,2062877152,Seattle,WA,bird,2026-12-25,,811,102,duplicate_merged
+163,chen ortiz,chen.ortiz9@example.com,(212) 380-9878,New York,NY,dog ,10-01-2027,web,795,121,duplicate_merged
+130,Hannah Brown,hannah.brown691+b@example.com,999-000-3692,Portland,OR,bird,2027-01-01,referral ,90,147,duplicate_merged
+263,Lena Hale,LENA.HALE447@EXAMPLE.COM,+1 6023640749,Phoenix,Arizona,cat + dog,2027-01-08,CitizenShipper,781,135,duplicate_merged
+217,Lena Hale,lena.hale447+b@example.com,+1 9990008216,Portland,or,cat + dog,Jan 08 2027,CitizenShipper,781,135,duplicate_merged
+168,"  ORTIZ, Zoe ",zoe.ortiz845@example.com,(212) 440-0736,New York,NY,dog ,2026-12-31,citizen shipper,1644,140,duplicate_merged
+194,nina patel,nina.patel743@example.com,404.631.6266,Atlanta,Georgia,rabbit,11/30/2026,Referral,1378,142,duplicate_merged
+282,Nina Brown,nina.brown535@example.com,3036005264,Denver,CO,CAT,12/15/2026,Facebook,947,153,duplicate_merged
+157,"  MENDEZ, Mei ",mei.mendez263+b@example.com,999-000-3821,Portland,Oregon,rabbit,2026-12-01,web,611,259,duplicate_merged
+170,Nina Wong,nina.wong814@example.com,(602) 739-8408,Phoenix,AZ,puppy,11/29/2026,referral ,2569,160,duplicate_merged
+173,Emily Baptiste,emily.baptiste536@example.com,6028441670,Phoenix,AZ,cat,2027-01-16,referral ,2125,162,duplicate_merged
+205,mei patel,MEI.PATEL733@EXAMPLE.COM,303-815-0860,Denver,Colorado,bird,Jan 17 2027,,2659,165,duplicate_merged
+285,"  PATEL, Grace ",grace.patel451@example.com,(310) 248-1632,Los Angeles,CA,cat,28-11-2026,citizen shipper,1247,172,duplicate_merged
+211,Grace Ortiz,grace.ortiz399@example.com,(602) 810-1848,Phoenix,AZ,Dog,2026-12-08,Referral,417,176,duplicate_merged
+229,zoe rossi,zoe.rossi647@example.com,212-210-5247,New York,ny,Dog,14-01-2027,,2288,191,duplicate_merged
+254,emily haddad,emily.haddad121+b@example.com,999-000-8063,Portland,OR,rabbit,2027-01-16,fb,2772,196,duplicate_merged
+241,"  HALE, Sofia ",SOFIA.HALE211@EXAMPLE.COM,3032953907,Denver,co,cat,12/12/2026,,1666,204,duplicate_merged
+218,Nina Haddad,nina.haddad836+b@example.com,999-000-2110,Portland,OR,2 dogs,2027-01-11,web,2332,207,duplicate_merged
+269,Sofia Patel,sofia.patel915@example.com,312-379-7679,Chicago,il,puppy,2026-12-17,Facebook,2227,246,duplicate_merged
+287,priya rossi,PRIYA.ROSSI757@EXAMPLE.COM,404.340.2232,Atlanta,ga,dog,Jan 10 2027,Facebook,1438,260,duplicate_merged
+264,mei baptiste,mei.baptiste622+b@example.com,+1 9990008975,Portland,OR,cat,12/25/2026,web,1803,268,duplicate_merged

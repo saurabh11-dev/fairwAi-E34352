@@ -1,0 +1,1167 @@
+{
+  "marcus.patel844@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 87,
+    "last_seen": "2026-11-03"
+  },
+  "marcus.wong63@example.com": {
+    "company_type": "breeder",
+    "risk_score": 77,
+    "last_seen": "2026-09-13"
+  },
+  "sofia.khan982@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 27,
+    "last_seen": "2026-06-02"
+  },
+  "carlos.patel422@example.com": {
+    "company_type": "rescue",
+    "risk_score": 86,
+    "last_seen": "2026-07-08"
+  },
+  "marcus.shah783@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-05-15"
+  },
+  "zoe.haddad638@example.com": {
+    "company_type": "breeder",
+    "risk_score": 81,
+    "last_seen": "2026-05-18"
+  },
+  "priya.reid251@example.com": {
+    "company_type": "individual",
+    "risk_score": 24,
+    "last_seen": "2026-06-07"
+  },
+  "jonas.reid631@example.com": {
+    "company_type": "individual",
+    "risk_score": 16,
+    "last_seen": "2026-09-08"
+  },
+  "ivan.petrov92@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 27,
+    "last_seen": "2026-05-27"
+  },
+  "pedro.shah143@example.com": {
+    "company_type": "breeder",
+    "risk_score": 45,
+    "last_seen": "2026-04-14"
+  },
+  "dana.moreau464@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 3,
+    "last_seen": "2026-03-10"
+  },
+  "pedro.reid655@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 71,
+    "last_seen": "2026-01-22"
+  },
+  "james.smith254@example.com": {
+    "company_type": "individual",
+    "risk_score": 44,
+    "last_seen": "2026-03-24"
+  },
+  "mei.brown770@example.com": {
+    "company_type": "rescue",
+    "risk_score": 26,
+    "last_seen": "2026-01-12"
+  },
+  "dev.wong357@example.com": {
+    "company_type": "individual",
+    "risk_score": 52,
+    "last_seen": "2026-07-22"
+  },
+  "lena.haddad110@example.com": {
+    "company_type": "breeder",
+    "risk_score": 73,
+    "last_seen": "2026-07-02"
+  },
+  "grace.petrov848@example.com": {
+    "company_type": "breeder",
+    "risk_score": 53,
+    "last_seen": "2026-06-20"
+  },
+  "tom.smith652@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 31,
+    "last_seen": "2026-09-24"
+  },
+  "yara.smith592@example.com": {
+    "company_type": "individual",
+    "risk_score": 44,
+    "last_seen": "2026-05-25"
+  },
+  "chen.kim67@example.com": {
+    "company_type": "individual",
+    "risk_score": 48,
+    "last_seen": "2026-03-20"
+  },
+  "tom.reid222@example.com": {
+    "company_type": "individual",
+    "risk_score": 20,
+    "last_seen": "2026-06-20"
+  },
+  "carlos.ito699@example.com": {
+    "company_type": "breeder",
+    "risk_score": 13,
+    "last_seen": "2026-09-06"
+  },
+  "mei.lund741@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 63,
+    "last_seen": "2026-09-13"
+  },
+  "james.cruz873@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 35,
+    "last_seen": "2026-01-20"
+  },
+  "aisha.novak150@example.com": {
+    "company_type": "individual",
+    "risk_score": 64,
+    "last_seen": "2026-06-19"
+  },
+  "jonas.haddad236@example.com": {
+    "company_type": "individual",
+    "risk_score": 12,
+    "last_seen": "2026-02-15"
+  },
+  "dana.novak610@example.com": {
+    "company_type": "rescue",
+    "risk_score": 46,
+    "last_seen": "2026-08-03"
+  },
+  "dev.mendez601@example.com": {
+    "company_type": "individual",
+    "risk_score": 72,
+    "last_seen": "2026-03-20"
+  },
+  "zoe.smith194@example.com": {
+    "company_type": "rescue",
+    "risk_score": 6,
+    "last_seen": "2026-10-21"
+  },
+  "maria.lund963@example.com": {
+    "company_type": "rescue",
+    "risk_score": 78,
+    "last_seen": "2026-01-14"
+  },
+  "tom.clark847@example.com": {
+    "company_type": "rescue",
+    "risk_score": 54,
+    "last_seen": "2026-11-24"
+  },
+  "raj.moreau712@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 79,
+    "last_seen": "2026-08-06"
+  },
+  "priya.reid592@example.com": {
+    "company_type": "rescue",
+    "risk_score": 74,
+    "last_seen": "2026-04-15"
+  },
+  "lena.brown257@example.com": {
+    "company_type": "rescue",
+    "risk_score": 90,
+    "last_seen": "2026-11-03"
+  },
+  "nina.fox260@example.com": {
+    "company_type": "rescue",
+    "risk_score": 2,
+    "last_seen": "2026-06-27"
+  },
+  "dana.patel496@example.com": {
+    "company_type": "breeder",
+    "risk_score": 57,
+    "last_seen": "2026-01-26"
+  },
+  "chen.hale702@example.com": {
+    "company_type": "breeder",
+    "risk_score": 73,
+    "last_seen": "2026-05-07"
+  },
+  "priya.smith389@example.com": {
+    "company_type": "rescue",
+    "risk_score": 26,
+    "last_seen": "2026-06-17"
+  },
+  "chen.baptiste773@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-04-21"
+  },
+  "carlos.baptiste259@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 91,
+    "last_seen": "2026-04-11"
+  },
+  "carlos.novak147@example.com": {
+    "company_type": "individual",
+    "risk_score": 4,
+    "last_seen": "2026-10-14"
+  },
+  "maria.shah7@example.com": {
+    "company_type": "individual",
+    "risk_score": 72,
+    "last_seen": "2026-11-16"
+  },
+  "dev.novak89@example.com": {
+    "company_type": "rescue",
+    "risk_score": 38,
+    "last_seen": "2026-08-20"
+  },
+  "nina.shah769@example.com": {
+    "company_type": "rescue",
+    "risk_score": 50,
+    "last_seen": "2026-03-19"
+  },
+  "lena.khan853@example.com": {
+    "company_type": "breeder",
+    "risk_score": 33,
+    "last_seen": "2026-02-04"
+  },
+  "dev.shah665@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 83,
+    "last_seen": "2026-01-20"
+  },
+  "lena.novak532@example.com": {
+    "company_type": "rescue",
+    "risk_score": 94,
+    "last_seen": "2026-06-27"
+  },
+  "ivan.smith865@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 51,
+    "last_seen": "2026-05-13"
+  },
+  "james.singh925@example.com": {
+    "company_type": "individual",
+    "risk_score": 0,
+    "last_seen": "2027-03-14"
+  },
+  "yara.haddad216@example.com": {
+    "company_type": "individual",
+    "risk_score": 48,
+    "last_seen": "2026-07-10"
+  },
+  "carlos.rossi44@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-06-15"
+  },
+  "jonas.petrov22@example.com": {
+    "company_type": "breeder",
+    "risk_score": 41,
+    "last_seen": "2026-04-13"
+  },
+  "emily.mendez216@example.com": {
+    "company_type": "individual",
+    "risk_score": 28,
+    "last_seen": "2026-10-16"
+  },
+  "emily.rossi671@example.com": {
+    "company_type": "individual",
+    "risk_score": 36,
+    "last_seen": "2026-09-06"
+  },
+  "luis.weber921@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 27,
+    "last_seen": "2026-02-14"
+  },
+  "zoe.patel318@example.com": {
+    "company_type": "breeder",
+    "risk_score": 17,
+    "last_seen": "2026-08-14"
+  },
+  "emily.reid793@example.com": {
+    "company_type": "rescue",
+    "risk_score": 30,
+    "last_seen": "2026-10-13"
+  },
+  "ivan.lund993@example.com": {
+    "company_type": "individual",
+    "risk_score": 28,
+    "last_seen": "2026-10-20"
+  },
+  "marcus.rossi525@example.com": {
+    "company_type": "breeder",
+    "risk_score": 13,
+    "last_seen": "2026-03-08"
+  },
+  "tom.weber297@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-02-13"
+  },
+  "dana.singh98@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 47,
+    "last_seen": "2026-01-16"
+  },
+  "lena.weber826@example.com": {
+    "company_type": "breeder",
+    "risk_score": 81,
+    "last_seen": "2026-08-01"
+  },
+  "priya.singh300@example.com": {
+    "company_type": "individual",
+    "risk_score": 36,
+    "last_seen": "2026-11-13"
+  },
+  "chen.hale191@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-06-15"
+  },
+  "lena.hale638@example.com": {
+    "company_type": "rescue",
+    "risk_score": 86,
+    "last_seen": "2026-07-18"
+  },
+  "ivan.moreau474@example.com": {
+    "company_type": "individual",
+    "risk_score": 16,
+    "last_seen": "2026-10-27"
+  },
+  "nina.weber496@example.com": {
+    "company_type": "individual",
+    "risk_score": 92,
+    "last_seen": "2026-01-15"
+  },
+  "jonas.cruz757@example.com": {
+    "company_type": "individual",
+    "risk_score": 72,
+    "last_seen": "2026-05-17"
+  },
+  "raj.hale99@example.com": {
+    "company_type": "rescue",
+    "risk_score": 14,
+    "last_seen": "2026-06-02"
+  },
+  "maria.haddad893@example.com": {
+    "company_type": "individual",
+    "risk_score": 32,
+    "last_seen": "2026-03-25"
+  },
+  "emily.petrov52@example.com": {
+    "company_type": "individual",
+    "risk_score": 32,
+    "last_seen": "2026-06-04"
+  },
+  "grace.haddad774@example.com": {
+    "company_type": "rescue",
+    "risk_score": 98,
+    "last_seen": "2026-11-09"
+  },
+  "jonas.clark803@example.com": {
+    "company_type": "rescue",
+    "risk_score": 54,
+    "last_seen": "2026-04-22"
+  },
+  "marcus.petrov138@example.com": {
+    "company_type": "individual",
+    "risk_score": 76,
+    "last_seen": "2026-04-15"
+  },
+  "carlos.rossi932@example.com": {
+    "company_type": "rescue",
+    "risk_score": 34,
+    "last_seen": "2026-10-19"
+  },
+  "dana.mendez553@example.com": {
+    "company_type": "individual",
+    "risk_score": 16,
+    "last_seen": "2026-06-27"
+  },
+  "maria.ortiz870@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 39,
+    "last_seen": "2026-06-07"
+  },
+  "hannah.haddad523@example.com": {
+    "company_type": "breeder",
+    "risk_score": 9,
+    "last_seen": "2026-05-04"
+  },
+  "hannah.hale501@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 51,
+    "last_seen": "2026-01-18"
+  },
+  "priya.petrov463@example.com": {
+    "company_type": "individual",
+    "risk_score": 16,
+    "last_seen": "2026-11-27"
+  },
+  "jonas.weber973@example.com": {
+    "company_type": "rescue",
+    "risk_score": 42,
+    "last_seen": "2026-10-19"
+  },
+  "omar.singh951@example.com": {
+    "company_type": "rescue",
+    "risk_score": 6,
+    "last_seen": "2026-02-07"
+  },
+  "maria.khan227@example.com": {
+    "company_type": "individual",
+    "risk_score": 28,
+    "last_seen": "2026-10-01"
+  },
+  "lena.mendez841@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 27,
+    "last_seen": "2026-04-20"
+  },
+  "yara.hale504@example.com": {
+    "company_type": "rescue",
+    "risk_score": 14,
+    "last_seen": "2026-11-03"
+  },
+  "raj.rossi108@example.com": {
+    "company_type": "rescue",
+    "risk_score": 62,
+    "last_seen": "2026-02-06"
+  },
+  "grace.smith860@example.com": {
+    "company_type": "individual",
+    "risk_score": 28,
+    "last_seen": "2026-01-10"
+  },
+  "emily.smith503@example.com": {
+    "company_type": "individual",
+    "risk_score": 28,
+    "last_seen": "2026-02-10"
+  },
+  "mei.clark940@example.com": {
+    "company_type": "rescue",
+    "risk_score": 78,
+    "last_seen": "2026-05-17"
+  },
+  "nina.reid729@example.com": {
+    "company_type": "individual",
+    "risk_score": 64,
+    "last_seen": "2026-07-27"
+  },
+  "chen.singh161@example.com": {
+    "company_type": "rescue",
+    "risk_score": 26,
+    "last_seen": "2026-04-06"
+  },
+  "aisha.shah977@example.com": {
+    "company_type": "rescue",
+    "risk_score": 30,
+    "last_seen": "2026-09-25"
+  },
+  "chen.patel876@example.com": {
+    "company_type": "rescue",
+    "risk_score": 74,
+    "last_seen": "2026-02-17"
+  },
+  "zoe.baptiste330@example.com": {
+    "company_type": "rescue",
+    "risk_score": 70,
+    "last_seen": "2026-07-25"
+  },
+  "maria.clark358@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-10-23"
+  },
+  "mei.cruz864@example.com": {
+    "company_type": "rescue",
+    "risk_score": 50,
+    "last_seen": "2026-07-09"
+  },
+  "raj.lund196@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 59,
+    "last_seen": "2026-08-10"
+  },
+  "emily.clark702@example.com": {
+    "company_type": "rescue",
+    "risk_score": 42,
+    "last_seen": "2026-10-09"
+  },
+  "maria.shah362@example.com": {
+    "company_type": "breeder",
+    "risk_score": 9,
+    "last_seen": "2026-05-13"
+  },
+  "nina.haddad910@example.com": {
+    "company_type": "breeder",
+    "risk_score": 5,
+    "last_seen": "2026-01-19"
+  },
+  "omar.clark192@example.com": {
+    "company_type": "breeder",
+    "risk_score": 29,
+    "last_seen": "2026-09-17"
+  },
+  "james.ortiz132@example.com": {
+    "company_type": "individual",
+    "risk_score": 96,
+    "last_seen": "2026-10-12"
+  },
+  "maria.ortiz3@example.com": {
+    "company_type": "breeder",
+    "risk_score": 1,
+    "last_seen": "2026-11-17"
+  },
+  "james.cruz399@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 99,
+    "last_seen": "2026-03-07"
+  },
+  "omar.mendez311@example.com": {
+    "company_type": "individual",
+    "risk_score": 36,
+    "last_seen": "2026-06-03"
+  },
+  "hannah.petrov243@example.com": {
+    "company_type": "individual",
+    "risk_score": 44,
+    "last_seen": "2026-10-13"
+  },
+  "raj.moreau468@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 67,
+    "last_seen": "2026-05-08"
+  },
+  "chen.ortiz9@example.com": {
+    "company_type": "breeder",
+    "risk_score": 89,
+    "last_seen": "2026-02-12"
+  },
+  "maria.hale947@example.com": {
+    "company_type": "rescue",
+    "risk_score": 38,
+    "last_seen": "2026-11-25"
+  },
+  "chen.singh250@example.com": {
+    "company_type": "breeder",
+    "risk_score": 89,
+    "last_seen": "2026-08-25"
+  },
+  "pedro.mendez727@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 55,
+    "last_seen": "2026-06-10"
+  },
+  "jonas.clark211@example.com": {
+    "company_type": "rescue",
+    "risk_score": 18,
+    "last_seen": "2026-07-10"
+  },
+  "chen.kim616@example.com": {
+    "company_type": "individual",
+    "risk_score": 40,
+    "last_seen": "2026-01-26"
+  },
+  "hannah.kim672@example.com": {
+    "company_type": "individual",
+    "risk_score": 76,
+    "last_seen": "2026-10-04"
+  },
+  "tom.shah413@example.com": {
+    "company_type": "breeder",
+    "risk_score": 29,
+    "last_seen": "2026-05-19"
+  },
+  "pedro.moreau745@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 31,
+    "last_seen": "2026-02-01"
+  },
+  "hannah.brown691@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 47,
+    "last_seen": "2026-03-19"
+  },
+  "marcus.mendez405@example.com": {
+    "company_type": "breeder",
+    "risk_score": 49,
+    "last_seen": "2026-04-11"
+  },
+  "hannah.hale780@example.com": {
+    "company_type": "individual",
+    "risk_score": 8,
+    "last_seen": "2026-03-17"
+  },
+  "marcus.brown960@example.com": {
+    "company_type": "individual",
+    "risk_score": 60,
+    "last_seen": "2026-07-25"
+  },
+  "tom.moreau931@example.com": {
+    "company_type": "breeder",
+    "risk_score": 13,
+    "last_seen": "2026-09-07"
+  },
+  "lena.hale447@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 83,
+    "last_seen": "2026-05-26"
+  },
+  "nina.cruz283@example.com": {
+    "company_type": "rescue",
+    "risk_score": 38,
+    "last_seen": "2026-01-13"
+  },
+  "james.baptiste49@example.com": {
+    "company_type": "individual",
+    "risk_score": 60,
+    "last_seen": "2027-03-14"
+  },
+  "grace.petrov598@example.com": {
+    "company_type": "rescue",
+    "risk_score": 14,
+    "last_seen": "2026-06-25"
+  },
+  "zoe.ortiz845@example.com": {
+    "company_type": "rescue",
+    "risk_score": 42,
+    "last_seen": "2026-09-11"
+  },
+  "luis.moreau578@example.com": {
+    "company_type": "rescue",
+    "risk_score": 66,
+    "last_seen": "2026-05-12"
+  },
+  "nina.patel743@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 75,
+    "last_seen": "2026-10-20"
+  },
+  "omar.novak880@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 71,
+    "last_seen": "2026-07-26"
+  },
+  "grace.haddad382@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 23,
+    "last_seen": "2026-04-21"
+  },
+  "emily.wong341@example.com": {
+    "company_type": "individual",
+    "risk_score": 0,
+    "last_seen": "2026-03-27"
+  },
+  "omar.reid949@example.com": {
+    "company_type": "breeder",
+    "risk_score": 41,
+    "last_seen": "2026-02-26"
+  },
+  "dana.weber635@example.com": {
+    "company_type": "rescue",
+    "risk_score": 90,
+    "last_seen": "2026-09-16"
+  },
+  "raj.ito655@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 79,
+    "last_seen": "2026-03-15"
+  },
+  "marcus.cruz883@example.com": {
+    "company_type": "breeder",
+    "risk_score": 97,
+    "last_seen": "2026-11-12"
+  },
+  "pedro.cruz596@example.com": {
+    "company_type": "rescue",
+    "risk_score": 46,
+    "last_seen": "2026-03-07"
+  },
+  "raj.ito421@example.com": {
+    "company_type": "rescue",
+    "risk_score": 26,
+    "last_seen": "2026-06-15"
+  },
+  "nina.brown535@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-02-02"
+  },
+  "priya.moreau787@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 39,
+    "last_seen": "2026-03-09"
+  },
+  "maria.clark136@example.com": {
+    "company_type": "individual",
+    "risk_score": 56,
+    "last_seen": "2026-03-12"
+  },
+  "marcus.moreau467@example.com": {
+    "company_type": "rescue",
+    "risk_score": 46,
+    "last_seen": "2026-11-26"
+  },
+  "mei.mendez263@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-10-05"
+  },
+  "chen.moreau984@example.com": {
+    "company_type": "breeder",
+    "risk_score": 41,
+    "last_seen": "2026-02-13"
+  },
+  "luis.shah398@example.com": {
+    "company_type": "individual",
+    "risk_score": 24,
+    "last_seen": "2026-06-20"
+  },
+  "nina.wong814@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 51,
+    "last_seen": "2026-04-21"
+  },
+  "emily.baptiste536@example.com": {
+    "company_type": "breeder",
+    "risk_score": 41,
+    "last_seen": "2026-07-04"
+  },
+  "tom.moreau52@example.com": {
+    "company_type": "breeder",
+    "risk_score": 73,
+    "last_seen": "2026-01-18"
+  },
+  "mei.patel733@example.com": {
+    "company_type": "breeder",
+    "risk_score": 33,
+    "last_seen": "2026-09-18"
+  },
+  "jonas.rossi84@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 75,
+    "last_seen": "2026-08-14"
+  },
+  "marcus.kim571@example.com": {
+    "company_type": "individual",
+    "risk_score": 12,
+    "last_seen": "2026-04-10"
+  },
+  "grace.patel451@example.com": {
+    "company_type": "rescue",
+    "risk_score": 10,
+    "last_seen": "2026-03-10"
+  },
+  "lena.baptiste956@example.com": {
+    "company_type": "breeder",
+    "risk_score": 37,
+    "last_seen": "2026-11-04"
+  },
+  "grace.ortiz399@example.com": {
+    "company_type": "breeder",
+    "risk_score": 97,
+    "last_seen": "2026-04-17"
+  },
+  "sofia.baptiste10@example.com": {
+    "company_type": "rescue",
+    "risk_score": 46,
+    "last_seen": "2026-06-22"
+  },
+  "dana.novak271@example.com": {
+    "company_type": "individual",
+    "risk_score": 52,
+    "last_seen": "2026-04-10"
+  },
+  "yara.mendez3@example.com": {
+    "company_type": "rescue",
+    "risk_score": 90,
+    "last_seen": "2026-06-25"
+  },
+  "luis.brown833@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-06-06"
+  },
+  "aisha.haddad320@example.com": {
+    "company_type": "breeder",
+    "risk_score": 69,
+    "last_seen": "2026-04-03"
+  },
+  "dev.novak292@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 23,
+    "last_seen": "2026-01-25"
+  },
+  "nina.moreau17@example.com": {
+    "company_type": "individual",
+    "risk_score": 60,
+    "last_seen": "2026-06-17"
+  },
+  "omar.singh57@example.com": {
+    "company_type": "breeder",
+    "risk_score": 61,
+    "last_seen": "2026-05-08"
+  },
+  "nina.weber121@example.com": {
+    "company_type": "rescue",
+    "risk_score": 10,
+    "last_seen": "2026-06-16"
+  },
+  "james.hale410@example.com": {
+    "company_type": "breeder",
+    "risk_score": 93,
+    "last_seen": "2026-02-23"
+  },
+  "omar.novak5@example.com": {
+    "company_type": "individual",
+    "risk_score": 52,
+    "last_seen": "2026-05-02"
+  },
+  "raj.ortiz788@example.com": {
+    "company_type": "individual",
+    "risk_score": 8,
+    "last_seen": "2026-07-07"
+  },
+  "zoe.rossi647@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 19,
+    "last_seen": "2026-08-26"
+  },
+  "yara.khan994@example.com": {
+    "company_type": "individual",
+    "risk_score": 4,
+    "last_seen": "2026-04-13"
+  },
+  "raj.shah41@example.com": {
+    "company_type": "individual",
+    "risk_score": 40,
+    "last_seen": "2027-03-14"
+  },
+  "emily.haddad121@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 95,
+    "last_seen": "2026-06-12"
+  },
+  "priya.singh234@example.com": {
+    "company_type": "breeder",
+    "risk_score": 61,
+    "last_seen": "2026-06-16"
+  },
+  "pedro.novak502@example.com": {
+    "company_type": "rescue",
+    "risk_score": 90,
+    "last_seen": "2026-05-25"
+  },
+  "ivan.ito85@example.com": {
+    "company_type": "individual",
+    "risk_score": 20,
+    "last_seen": "2026-08-04"
+  },
+  "nina.singh507@example.com": {
+    "company_type": "rescue",
+    "risk_score": 30,
+    "last_seen": "2026-07-03"
+  },
+  "mei.smith161@example.com": {
+    "company_type": "individual",
+    "risk_score": 32,
+    "last_seen": "2026-10-05"
+  },
+  "ivan.khan732@example.com": {
+    "company_type": "individual",
+    "risk_score": 60,
+    "last_seen": "2026-03-03"
+  },
+  "sofia.hale211@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 75,
+    "last_seen": "2026-06-05"
+  },
+  "nina.haddad836@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 3,
+    "last_seen": "2026-03-16"
+  },
+  "ivan.weber788@example.com": {
+    "company_type": "breeder",
+    "risk_score": 69,
+    "last_seen": "2026-03-21"
+  },
+  "pedro.smith394@example.com": {
+    "company_type": "breeder",
+    "risk_score": 13,
+    "last_seen": "2026-01-25"
+  },
+  "mei.fox305@example.com": {
+    "company_type": "breeder",
+    "risk_score": 65,
+    "last_seen": "2026-10-26"
+  },
+  "chen.khan590@example.com": {
+    "company_type": "individual",
+    "risk_score": 12,
+    "last_seen": "2026-03-01"
+  },
+  "sofia.shah890@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-04-08"
+  },
+  "raj.patel47@example.com": {
+    "company_type": "individual",
+    "risk_score": 12,
+    "last_seen": "2026-11-12"
+  },
+  "zoe.singh758@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 71,
+    "last_seen": "2026-06-12"
+  },
+  "luis.ortiz566@example.com": {
+    "company_type": "rescue",
+    "risk_score": 74,
+    "last_seen": "2026-04-15"
+  },
+  "yara.patel673@example.com": {
+    "company_type": "breeder",
+    "risk_score": 9,
+    "last_seen": "2026-05-16"
+  },
+  "carlos.alvarez938@example.com": {
+    "company_type": "rescue",
+    "risk_score": 18,
+    "last_seen": "2026-10-07"
+  },
+  "raj.khan475@example.com": {
+    "company_type": "breeder",
+    "risk_score": 21,
+    "last_seen": "2026-02-24"
+  },
+  "sofia.haddad641@example.com": {
+    "company_type": "rescue",
+    "risk_score": 42,
+    "last_seen": "2026-01-22"
+  },
+  "zoe.lund528@example.com": {
+    "company_type": "individual",
+    "risk_score": 84,
+    "last_seen": "2026-01-23"
+  },
+  "nina.kim326@example.com": {
+    "company_type": "breeder",
+    "risk_score": 77,
+    "last_seen": "2026-07-15"
+  },
+  "jonas.lund929@example.com": {
+    "company_type": "breeder",
+    "risk_score": 45,
+    "last_seen": "2026-01-18"
+  },
+  "dana.moreau550@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 99,
+    "last_seen": "2026-02-25"
+  },
+  "zoe.kim825@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 35,
+    "last_seen": "2026-02-27"
+  },
+  "sofia.reid971@example.com": {
+    "company_type": "rescue",
+    "risk_score": 82,
+    "last_seen": "2026-11-09"
+  },
+  "luis.kim580@example.com": {
+    "company_type": "rescue",
+    "risk_score": 38,
+    "last_seen": "2026-05-09"
+  },
+  "omar.smith412@example.com": {
+    "company_type": "individual",
+    "risk_score": 80,
+    "last_seen": "2026-05-20"
+  },
+  "jonas.singh871@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 43,
+    "last_seen": "2026-05-22"
+  },
+  "maria.singh982@example.com": {
+    "company_type": "rescue",
+    "risk_score": 14,
+    "last_seen": "2026-07-19"
+  },
+  "dev.weber361@example.com": {
+    "company_type": "individual",
+    "risk_score": 0,
+    "last_seen": "2026-09-07"
+  },
+  "tom.novak458@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 51,
+    "last_seen": "2026-03-17"
+  },
+  "sofia.patel915@example.com": {
+    "company_type": "rescue",
+    "risk_score": 94,
+    "last_seen": "2026-04-21"
+  },
+  "grace.brown843@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 27,
+    "last_seen": "2026-06-07"
+  },
+  "mei.kim597@example.com": {
+    "company_type": "breeder",
+    "risk_score": 81,
+    "last_seen": "2026-11-20"
+  },
+  "pedro.hale612@example.com": {
+    "company_type": "breeder",
+    "risk_score": 81,
+    "last_seen": "2026-07-14"
+  },
+  "carlos.reid850@example.com": {
+    "company_type": "breeder",
+    "risk_score": 85,
+    "last_seen": "2026-02-26"
+  },
+  "raj.baptiste654@example.com": {
+    "company_type": "breeder",
+    "risk_score": 97,
+    "last_seen": "2026-03-04"
+  },
+  "maria.baptiste537@example.com": {
+    "company_type": "breeder",
+    "risk_score": 89,
+    "last_seen": "2026-05-21"
+  },
+  "tom.khan653@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 3,
+    "last_seen": "2026-05-08"
+  },
+  "carlos.novak16@example.com": {
+    "company_type": "rescue",
+    "risk_score": 62,
+    "last_seen": "2026-01-13"
+  },
+  "maria.baptiste73@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 95,
+    "last_seen": "2026-06-16"
+  },
+  "priya.rossi757@example.com": {
+    "company_type": "rescue",
+    "risk_score": 50,
+    "last_seen": "2026-08-07"
+  },
+  "hannah.mendez421@example.com": {
+    "company_type": "breeder",
+    "risk_score": 65,
+    "last_seen": "2026-01-09"
+  },
+  "yara.alvarez922@example.com": {
+    "company_type": "rescue",
+    "risk_score": 22,
+    "last_seen": "2026-07-22"
+  },
+  "mei.baptiste622@example.com": {
+    "company_type": "rescue",
+    "risk_score": 62,
+    "last_seen": "2026-10-21"
+  },
+  "chen.petrov551@example.com": {
+    "company_type": "rescue",
+    "risk_score": 62,
+    "last_seen": "2026-10-07"
+  },
+  "carlos.weber340@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 11,
+    "last_seen": "2026-09-03"
+  },
+  "chen.wong260@example.com": {
+    "company_type": "breeder",
+    "risk_score": 81,
+    "last_seen": "2026-03-04"
+  },
+  "grace.clark504@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 99,
+    "last_seen": "2026-06-05"
+  },
+  "grace.cruz819@example.com": {
+    "company_type": "individual",
+    "risk_score": 88,
+    "last_seen": "2026-08-14"
+  },
+  "jonas.hale97@example.com": {
+    "company_type": "breeder",
+    "risk_score": 5,
+    "last_seen": "2026-03-04"
+  },
+  "yara.cruz708@example.com": {
+    "company_type": "rescue",
+    "risk_score": 50,
+    "last_seen": "2026-05-02"
+  },
+  "grace.lund695@example.com": {
+    "company_type": "rescue",
+    "risk_score": 70,
+    "last_seen": "2026-05-02"
+  },
+  "omar.cruz210@example.com": {
+    "company_type": "rescue",
+    "risk_score": 42,
+    "last_seen": "2026-04-13"
+  },
+  "carlos.alvarez731@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 63,
+    "last_seen": "2026-07-22"
+  },
+  "priya.lund94@example.com": {
+    "company_type": "rescue",
+    "risk_score": 50,
+    "last_seen": "2026-07-23"
+  },
+  "tom.brown768@example.com": {
+    "company_type": "rescue",
+    "risk_score": 10,
+    "last_seen": "2026-08-10"
+  },
+  "tom.haddad205@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 83,
+    "last_seen": "2026-07-10"
+  },
+  "ivan.mendez748@example.com": {
+    "company_type": "individual",
+    "risk_score": 68,
+    "last_seen": "2026-05-14"
+  },
+  "maria.ito54@example.com": {
+    "company_type": "relocation firm",
+    "risk_score": 19,
+    "last_seen": "2026-05-03"
+  },
+  "jonas.khan679@example.com": {
+    "company_type": "rescue",
+    "risk_score": 94,
+    "last_seen": "2026-08-03"
+  },
+  "emily.wong815@example.com": {
+    "company_type": "rescue",
+    "risk_score": 38,
+    "last_seen": "2026-10-23"
+  },
+  "ivan.haddad488@example.com": {
+    "company_type": "rescue",
+    "risk_score": 30,
+    "last_seen": "2026-05-18"
+  }
+}

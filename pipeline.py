@@ -6,6 +6,9 @@ import csv
 import json
 import os
 import re
+import socket
+import subprocess
+import sys
 import time
 import urllib.request
 import urllib.parse
@@ -13,6 +16,7 @@ import urllib.error
 from collections import defaultdict
 from datetime import datetime
 from typing import Tuple, Optional, List, Dict, Any
+
 
 
 # US State name/abbreviation mapping to 2-letter USPS postal codes
@@ -479,6 +483,171 @@ class EnrichmentClient:
                     time.sleep(self.rate_limit_pause)
 
         return self.cache
+
+
+def is_port_open(host: str = "127.0.0.1", port: int = 8080) -> bool:
+    """Checks whether the specified port is accepting TCP connections."""
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.settimeout(0.5)
+        return s.connect_ex((host, port)) == 0
+    except Exception:
+        return False
+    finally:
+        s.close()
+
+
+def ensure_server_running(script_dir: str) -> Optional[subprocess.Popen]:
+    """Ensures server.py is running on port 8080. If not, spawns it."""
+    if is_port_open("127.0.0.1", 8080):
+        return None
+
+    server_path = os.path.join(script_dir, "server.py")
+    if os.path.exists(server_path):
+        proc = subprocess.Popen([sys.executable, server_path], cwd=script_dir)
+        # Wait up to 3 seconds for server to bind
+        for _ in range(30):
+            time.sleep(0.1)
+            if is_port_open("127.0.0.1", 8080):
+                break
+        return proc
+    return None
+
+
+def run_pipeline(
+    raw_csv_path: str = "leads_raw.csv",
+    clean_csv_path: str = "leads_clean.csv",
+    removed_csv_path: str = "removed.csv",
+    cache_path: str = "enrichment_cache.json"
+) -> Tuple[int, float]:
+    """Executes the full FairwAI lead ingestion and enrichment pipeline.
+    Returns (unique_valid_leads, expected_revenue_usd).
+    """
+    script_dir = os.path.dirname(os.path.abspath(raw_csv_path)) or "."
+    server_proc = ensure_server_running(script_dir)
+
+    try:
+        # 1. Read raw CSV
+        with open(raw_csv_path, "r", encoding="utf-8", errors="replace") as f:
+            raw_rows = list(csv.DictReader(f))
+
+        tracker = RemovedTracker()
+
+        # 2. Validation filter
+        valid_rows: List[Dict[str, str]] = []
+        for row in raw_rows:
+            is_valid, reason = validate_lead(row)
+            if is_valid:
+                valid_rows.append(row)
+            else:
+                tracker.log_removal(row, reason=reason or "invalid_lead")
+
+        # 3. Deduplication & record merging
+        surviving_leads = deduplicate_leads(valid_rows, tracker)
+
+        # 4. Enrichment
+        enricher = EnrichmentClient(cache_file=cache_path)
+        emails = [canonical_email(s.get("email", "")) for s in surviving_leads]
+        enrichment_data = enricher.enrich_emails(emails)
+
+        # 5. Transform & assemble clean leads
+        clean_rows: List[Dict[str, Any]] = []
+        total_individual_revenue = 0.0
+
+        for lead in surviving_leads:
+            c_email = canonical_email(lead.get("email", ""))
+            enr = enrichment_data.get(c_email, {})
+
+            # Clean and normalize fields
+            lead_id = lead.get("id", "")
+            name = clean_name(lead.get("name", ""))
+            email = clean_email(lead.get("email", ""))
+            phone, phone_flag = clean_phone(lead.get("phone", ""))
+            city = lead.get("city", "").strip()
+            state, state_flag = clean_state(lead.get("state", ""))
+            pet, pet_count, pet_flag = parse_pet(lead.get("pet", ""))
+            move_date, _, date_flag = parse_move_date(lead.get("move_date", ""))
+            source = lead.get("source", "").strip()
+            miles, miles_flag = convert_miles(lead.get("miles", ""), source)
+
+            company_type = enr.get("company_type", "")
+            risk_score = enr.get("risk_score")
+            last_seen = enr.get("last_seen", "")
+
+            # Compile flags
+            flags = []
+            if phone_flag:
+                flags.append(phone_flag)
+            if state_flag:
+                flags.append(state_flag)
+            if pet_flag:
+                flags.append(pet_flag)
+            if miles_flag:
+                flags.append(miles_flag)
+            if risk_score is not None and isinstance(risk_score, (int, float)) and risk_score >= 80:
+                flags.append(f"high_risk_score_{risk_score}")
+            if last_seen and last_seen > "2027-01-01":
+                flags.append(f"future_last_seen_{last_seen}")
+
+            flag_str = "; ".join(flags)
+
+            clean_row = {
+                "id": lead_id,
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "city": city,
+                "state": state,
+                "pet": pet,
+                "pet_count": pet_count,
+                "move_date": move_date or "",
+                "source": source,
+                "miles": miles if miles is not None else "",
+                "company_type": company_type,
+                "risk_score": risk_score if risk_score is not None else "",
+                "last_seen": last_seen,
+                "flag": flag_str
+            }
+            clean_rows.append(clean_row)
+
+            # Revenue calculation: miles * $1.10 * pet_count for company_type == 'individual'
+            if company_type == "individual" and miles is not None:
+                rev = float(miles) * 1.10 * int(pet_count)
+                total_individual_revenue += rev
+
+        # 6. Write leads_clean.csv with exact required column ordering
+        fieldnames = [
+            "id", "name", "email", "phone", "city", "state",
+            "pet", "pet_count", "move_date", "source", "miles",
+            "company_type", "risk_score", "last_seen", "flag"
+        ]
+        with open(clean_csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(clean_rows)
+
+        # 7. Write removed.csv
+        tracker.write_csv(removed_csv_path)
+
+        unique_valid_leads = len(clean_rows)
+        expected_revenue_usd = round(total_individual_revenue, 2)
+
+        return unique_valid_leads, expected_revenue_usd
+
+    finally:
+        if server_proc is not None:
+            server_proc.terminate()
+            try:
+                server_proc.wait(timeout=2)
+            except Exception:
+                pass
+
+
+if __name__ == "__main__":
+    leads_count, revenue_usd = run_pipeline()
+    print(f"UNIQUE_VALID_LEADS: {leads_count}")
+    print(f"EXPECTED_REVENUE_USD: {revenue_usd:.2f}")
+
 
 
 
